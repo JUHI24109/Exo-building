@@ -62,8 +62,16 @@ const translations = {
         form_service: "Serviço Requerido",
         form_message: "Detalhes do Projeto",
         form_submit: "Enviar Pedido",
+        explore_services: "Explorar Todos os Serviços",
         footer_brand: "Construção de vanguarda e consultoria técnica em Portugal e no resto da Europa.",
-        copyright: "© 2022 EXO Building. Todos os direitos reservados."
+        phone_label: "Telefone",
+        location_label: "Localização",
+        web_label: "Web",
+        copyright: "© 2022 EXO Building. Todos os direitos reservados.",
+        quality_title: "Comprometidos com a Qualidade",
+        quality_p: "Nossa equipe de 30 profissionais altamente qualificados trabalha com o que há de mais moderno em maquinário pesado para garantir que cada centímetro de sua obra seja perfeita.",
+        quality_btn: "Fale com Especialista",
+        worker_badge: "+30 Trabalhadores Especializados"
     },
     en: {
         nav_home: "Home", nav_projects: "Projects", nav_services: "Services", nav_about: "About", nav_contact: "Contact",
@@ -117,12 +125,20 @@ const translations = {
         serv_pr_p: "Smooth rendering and advanced plastering systems for a flawless, high-end architectural finish.",
         serv_et_t: "Exterior Insulation (ETICS)",
         serv_et_p: "Advanced thermal insulation systems to enhance energy efficiency and building longevity.",
+        explore_services: "Explore All Services",
         f_nav: "Navigation",
         f_serv: "Services",
         privacy: "Privacy Policy",
         terms: "Terms of Service",
         footer_brand: "State-of-the-art construction and technical consultancy across Portugal and Europe.",
-        copyright: "© 2022 EXO Building. All rights reserved."
+        phone_label: "Phone",
+        location_label: "Location",
+        web_label: "Web",
+        copyright: "© 2022 EXO Building. All rights reserved.",
+        quality_title: "Committed to Quality",
+        quality_p: "Our team of 30 highly skilled professionals works with the latest heavy machinery to ensure every inch of your construction is perfect.",
+        quality_btn: "Speak with Specialist",
+        worker_badge: "+30 Specialized Workers"
     },
     // Adding others briefly for now to keep it manageable, but I'll ensure PT is perfect as requested
     fr: {
