@@ -370,8 +370,9 @@ footer {
 
 .footer-brand .footer-logo {
     display: block;
-    height: 60px;
+    height: 100px;
     width: auto;
+    margin-left: -15px;
     margin-bottom: 1.5rem;
     transition: var(--transition);
     mix-blend-mode: lighten;
