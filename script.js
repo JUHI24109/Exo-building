@@ -347,6 +347,27 @@ const projectData = [
     ]}
 ];
 
+// Auto-sort images to prioritize img-1, img-2, etc.
+projectData.forEach(project => {
+    project.images.sort((a, b) => {
+        const getPriority = (path) => {
+            const fileName = path.split('/').pop().toLowerCase();
+            if (fileName.startsWith('img-')) {
+                // Extract number, handle img-1, img-10 etc correctly
+                const num = parseInt(fileName.match(/\d+/)) || 0;
+                return num; 
+            }
+            return 999; // Lower priority for other names
+        };
+
+        const pA = getPriority(a);
+        const pB = getPriority(b);
+
+        if (pA !== pB) return pA - pB;
+        return a.localeCompare(b); // Alphabetical for same priority
+    });
+});
+
 function initGallery() {
     const gallery = document.getElementById('project-gallery');
     if (!gallery) return;
