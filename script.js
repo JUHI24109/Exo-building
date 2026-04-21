@@ -62,6 +62,19 @@ const translations = {
         form_service: "Serviço Requerido",
         form_message: "Detalhes do Projeto",
         form_submit: "Enviar Pedido",
+        form_name_p: "João Silva",
+        form_email_p: "joao@exemplo.pt",
+        form_msg_p: "Conte-nos sobre os requisitos do seu projeto...",
+        form_serv_placeholder: "Selecione um Serviço",
+        form_serv_opt_1: "Fundações e Escavações",
+        form_serv_opt_2: "Colunas, Vigas e Lajes",
+        form_serv_opt_3: "Alvenaria e Tijolos",
+        form_serv_opt_4: "Estrutura",
+        form_serv_opt_5: "Regularização de Pisos",
+        form_serv_opt_6: "Carpintaria",
+        form_serv_opt_7: "Estuque e Reboco",
+        form_serv_opt_8: "Isolamento Exterior (ETICS)",
+        form_serv_opt_9: "Consultoria Técnica",
         explore_services: "Explorar Todos os Serviços",
         lang_label: "Idioma",
         footer_brand: "Construção de vanguarda e consultoria técnica em Portugal e no resto da Europa.",
@@ -111,6 +124,19 @@ const translations = {
         form_service: "Required Service",
         form_message: "Project Details",
         form_submit: "Send Inquiry",
+        form_name_p: "John Doe",
+        form_email_p: "john@example.com",
+        form_msg_p: "Tell us about your project requirements...",
+        form_serv_placeholder: "Select a Service",
+        form_serv_opt_1: "Foundations & Excavations",
+        form_serv_opt_2: "Columns, Beams & Slabs",
+        form_serv_opt_3: "Masonry & Brickwork",
+        form_serv_opt_4: "Framework",
+        form_serv_opt_5: "Floor Screeding",
+        form_serv_opt_6: "Carpentry",
+        form_serv_opt_7: "Plastering & Rendering",
+        form_serv_opt_8: "Exterior Insulation (ETICS)",
+        form_serv_opt_9: "Technical Consultancy",
         serv_f_t: "Foundations & Excavations",
         serv_f_p: "Site preparation and expert ground excavations for project stability and load-bearing excellence.",
         serv_c_t: "Columns, Beams & Slabs",
@@ -204,11 +230,34 @@ function changeLanguage(lang) {
     localStorage.setItem('exo_lang', lang);
     document.documentElement.lang = lang;
     
+    // Update text content
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
-        if (translations[lang][key]) {
+        if (translations[lang] && translations[lang][key]) {
             el.innerText = translations[lang][key];
         }
+    });
+
+    // Update placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        if (translations[lang] && translations[lang][key]) {
+            el.placeholder = translations[lang][key];
+        }
+    });
+
+    // Update select options (dropdowns)
+    document.querySelectorAll('select[data-i18n-select]').forEach(select => {
+        const keyPrefix = select.getAttribute('data-i18n-select');
+        Array.from(select.options).forEach((opt, idx) => {
+            if (idx === 0) { // Handle the placeholder/first option
+                const pKey = `${keyPrefix}_placeholder`;
+                if (translations[lang] && translations[lang][pKey]) opt.text = translations[lang][pKey];
+            } else {
+                const optKey = `${keyPrefix}_opt_${idx}`;
+                if (translations[lang] && translations[lang][optKey]) opt.text = translations[lang][optKey];
+            }
+        });
     });
 
     // Handle RTL for Urdu
