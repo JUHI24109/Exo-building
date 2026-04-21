@@ -327,7 +327,7 @@ const projectData = [
         'Biscaia/img-4.jpg', 'Biscaia/img-5.jpg', 'Biscaia/img-6.jpg', 'Biscaia/img-7.png', 'Biscaia/img-8.png'
     ]},
     { id: 'monaco', name: 'Hotel Monaco', images: [
-        'Hotel-MONACO/0932a491-e337-42b4-9b28-40319f6b6615.jpeg', 'Hotel-MONACO/10c66cd7-c37b-4122-8a89-a513950bcbcb.jpeg', 
+        'Hotel-MONACO/img-1.jpeg', 'Hotel-MONACO/0932a491-e337-42b4-9b28-40319f6b6615.jpeg', 'Hotel-MONACO/10c66cd7-c37b-4122-8a89-a513950bcbcb.jpeg', 
         'Hotel-MONACO/19b6da65-b917-4fe0-a829-82d10c7429e9.jpeg', 'Hotel-MONACO/239fa819-dc67-437b-b8f4-06306a220162.jpeg', 
         'Hotel-MONACO/2ec7b7db-6a8b-4931-9a87-86abbc5624a4.jpeg', 'Hotel-MONACO/32bb3200-5ebb-4bbd-8152-9769e659b0da.jpeg', 
         'Hotel-MONACO/38438262-d986-4e82-93bc-9374e59ee947.jpeg', 'Hotel-MONACO/3887c2b8-5694-4b6a-95f2-f04fc6755f9f.jpeg', 
@@ -343,7 +343,7 @@ const projectData = [
         'Hotel-MONACO/image (5).png', 'Hotel-MONACO/image (6).png'
     ]},
     { id: 'santarem', name: 'Santarém', images: [
-        'santarem/image (5).png', 'santarem/image (6).png', 'santarem/image (7).png'
+        'santarem/img-1.png', 'santarem/image (5).png', 'santarem/image (6).png', 'santarem/image (7).png', 'santarem/image (8).png'
     ]}
 ];
 
