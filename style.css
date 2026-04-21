@@ -369,12 +369,14 @@ footer {
 }
 
 .footer-brand .footer-logo {
+    display: block;
     height: 60px;
     width: auto;
     margin-bottom: 1.5rem;
     transition: var(--transition);
     mix-blend-mode: lighten;
     filter: brightness(1.1);
+    transform-origin: left;
 }
 
 .footer-brand .footer-logo:hover {
