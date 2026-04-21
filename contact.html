@@ -54,10 +54,14 @@
         </div>
     </section>
 
-    <section>
-        <div class="container">
-            <div class="split-section">
-                <div class="reveal">
+    <section style="position: relative; padding: 10rem 0; overflow: hidden;">
+        <!-- Background Image with Overlay -->
+        <div style="position: absolute; inset: 0; background: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('im1.jpeg'); background-size: cover; background-position: center; z-index: 0;"></div>
+        
+        <div class="container" style="position: relative; z-index: 1;">
+            <div class="split-section" style="gap: 4rem;">
+                <!-- Contact Info with Golden Border -->
+                <div class="reveal" style="background: rgba(255,255,255,0.8); padding: 3rem; border: 2px solid var(--primary); border-radius: 20px; backdrop-filter: blur(10px); box-shadow: var(--shadow);">
                     <h2 style="font-size: 2.5rem; margin-bottom: 2rem;" data-i18n="office_title">Escritório de Lisboa</h2>
                     <p style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 2rem;">
                         Avenida da Liberdade 144, Lisboa, Portugal.
@@ -72,7 +76,9 @@
                         <a href="https://wa.me/351918445810" target="_blank" class="btn btn-primary"><i class="fab fa-whatsapp"></i> WhatsApp</a>
                     </div>
                 </div>
-                <div class="reveal">
+
+                <!-- Form with Golden Border -->
+                <div class="reveal" style="background: rgba(255,255,255,0.8); padding: 3rem; border: 2px solid var(--primary); border-radius: 20px; backdrop-filter: blur(10px); box-shadow: var(--shadow);">
                     <!-- Mensagens de Sucesso/Erro -->
                     <div data-fs-success style="display: none; text-align: center; padding: 2rem; background: rgba(197, 160, 68, 0.1); border-radius: 8px; border: 1px solid var(--primary); margin-bottom: 2rem;">
                         <i class="fas fa-check-circle" style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;"></i>
