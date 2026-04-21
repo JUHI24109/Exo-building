@@ -582,9 +582,61 @@ footer {
 }
 
 @media (max-width: 992px) {
-    .nav-links { display: none; }
+    /* Tablet Optimizations */
     .split-section { grid-template-columns: 1fr; text-align: center; }
     .footer-grid { grid-template-columns: 1fr 1fr; }
+    .hero p { font-size: 1.2rem; }
+    .service-grid { grid-template-columns: repeat(2, 1fr); }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    .vision-card { padding: 3rem; }
+    .contact-header-socials { justify-content: center; }
+    .badge-float { left: 50%; transform: translateX(-50%); top: auto; bottom: 20px; }
+}
+
+@media (max-width: 768px) {
+    /* Mobile App-Like Optimizations */
+    section { padding: 5rem 0; }
+    
+    /* Elegant Mobile Navigation */
+    .nav-container { padding: 0 1rem !important; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+    .nav-links { 
+        display: flex; 
+        gap: 0.5rem; 
+        overflow-x: auto; 
+        width: 100%; 
+        padding-bottom: 0.5rem; 
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;
+    }
+    .nav-links::-webkit-scrollbar { display: none; }
+    .nav-link { font-size: 0.75rem; padding: 0.5rem 1rem; white-space: nowrap; }
+    .lang-switcher { margin-left: auto; margin-right: auto; }
+    header { padding: 0.5rem 0; }
+    
+    /* Typography & Spacing */
+    .hero h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem !important; }
+    h3 { font-size: 1.5rem; }
+    .hero p { font-size: 1rem; }
+    .btn { padding: 1rem 2rem; width: 100%; text-align: center; box-sizing: border-box; }
+    
+    /* Grids & Cards */
+    .service-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    .gallery-grid { grid-template-columns: 1fr; gap: 1rem; }
+    .footer-grid { grid-template-columns: 1fr; text-align: center; }
+    .footer-brand { align-items: center; }
+    .footer-links { text-align: center; }
+    .footer-links li:before { display: none; }
+    .footer-links li { padding-left: 0; }
+    .vision-card { padding: 2rem; }
+    .vision-icon { margin: 0 auto 1.5rem; }
+    
+    /* Hero Adjustments */
+    .projects-hero-bg { background-position: center !important; }
+    section[style*="aspect-ratio"] { aspect-ratio: auto !important; min-height: 400px !important; padding: 150px 0 50px !important; }
+    .about-hero { padding: 150px 0 50px !important; }
+    
+    .lightbox-content { max-width: 100%; max-height: 80%; }
 }
 
 /* --- Grid Utilities --- */
