@@ -63,6 +63,7 @@ const translations = {
         form_message: "Detalhes do Projeto",
         form_submit: "Enviar Pedido",
         explore_services: "Explorar Todos os Serviços",
+        lang_label: "Idioma",
         footer_brand: "Construção de vanguarda e consultoria técnica em Portugal e no resto da Europa.",
         phone_label: "Telefone",
         location_label: "Localização",
@@ -71,7 +72,8 @@ const translations = {
         quality_title: "Comprometidos com a Qualidade",
         quality_p: "Nossa equipe de 30 profissionais altamente qualificados trabalha com o que há de mais moderno em maquinário pesado para garantir que cada centímetro de sua obra seja perfeita.",
         quality_btn: "Fale com Especialista",
-        worker_badge: "+30 Trabalhadores Especializados"
+        worker_badge: "+30 Trabalhadores Especializados",
+        skilled_specialists: "Especialistas Qualificados"
     },
     en: {
         nav_home: "Home", nav_projects: "Projects", nav_services: "Services", nav_about: "About", nav_contact: "Contact",
@@ -126,6 +128,7 @@ const translations = {
         serv_et_t: "Exterior Insulation (ETICS)",
         serv_et_p: "Advanced thermal insulation systems to enhance energy efficiency and building longevity.",
         explore_services: "Explore All Services",
+        lang_label: "Language",
         f_nav: "Navigation",
         f_serv: "Services",
         privacy: "Privacy Policy",
@@ -138,7 +141,8 @@ const translations = {
         quality_title: "Committed to Quality",
         quality_p: "Our team of 30 highly skilled professionals works with the latest heavy machinery to ensure every inch of your construction is perfect.",
         quality_btn: "Speak with Specialist",
-        worker_badge: "+30 Specialized Workers"
+        worker_badge: "+30 Specialized Workers",
+        skilled_specialists: "Skilled Specialists"
     },
     // Adding others briefly for now to keep it manageable, but I'll ensure PT is perfect as requested
     fr: {
