@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | EXO Building</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="scrolled">
+        <div class="container nav-container">
+            <nav>
+                <a href="index.html" class="logo"><img src="logo.png" alt="EXO Building Logo"></a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link" data-i18n="nav_home">Início</a></li>
+                    <li><a href="projects.html" class="nav-link" data-i18n="nav_projects">Projetos</a></li>
+                    <li><a href="services.html" class="nav-link" data-i18n="nav_services">Serviços</a></li>
+                    <li><a href="about.html" class="nav-link active" data-i18n="nav_about">Sobre</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contacto</a></li>
+                </ul>
+                <div class="lang-switcher">
+                    <button class="lang-btn"><i class="fas fa-globe"></i> Language</button>
+                    <div class="lang-dropdown">
+                        <span class="lang-option" onclick="changeLanguage('pt')">Português</span>
+                        <span class="lang-option" onclick="changeLanguage('en')">English</span>
+                        <span class="lang-option" onclick="changeLanguage('fr')">Français</span>
+                        <span class="lang-option" onclick="changeLanguage('nl')">Nederlands</span>
+                        <span class="lang-option" onclick="changeLanguage('zh')">中文</span>
+                        <span class="lang-option" onclick="changeLanguage('ur')">اردو</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Hero Section -->
+    <section class="about-hero" style="padding: 12rem 0 8rem; background: linear-gradient(135deg, #f8f9fb 0%, #edf2f7 100%); overflow: hidden;">
+        <div class="container">
+            <div class="split-section" style="align-items: center; gap: 6rem;">
+                <div class="reveal">
+                    <h6 style="color: var(--primary); text-transform: uppercase; letter-spacing: 0.3em; font-weight: 800; margin-bottom: 1.5rem;" data-i18n="about_tagline">Artesanato Superior</h6>
+                    <h1 style="color: var(--secondary); font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; margin-bottom: 2.5rem;" data-i18n="about_title">Construindo as Marcas do Amanhã Hoje.</h1>
+                    <div style="width: 80px; height: 4px; background: var(--primary); margin-bottom: 2.5rem;"></div>
+                    <p style="font-size: 1.1rem; color: #475569; line-height: 1.8; margin-bottom: 2rem;" data-i18n="about_p1">
+                        A Exo Building é uma empresa de construção especializada em projetos residenciais e comerciais, entregando resultados de alta qualidade com precisão técnica, eficiência e controlo operacional total.
+                    </p>
+                    <p style="font-size: 1.1rem; color: #475569; line-height: 1.8; margin-bottom: 2rem;" data-i18n="about_p2">
+                        Com uma equipa interna dedicada de 30 profissionais qualificados e acesso a maquinaria pesada avançada, garantimos o cumprimento rigoroso dos prazos, eficiência de custos e mão-de-obra superior em cada fase da construção.
+                    </p>
+                    <p style="font-size: 1.1rem; color: #475569; line-height: 1.8; font-weight: 600;" data-i18n="about_p3">
+                        Empreiteiro de obras públicas certificado (Alvará n.º 120974 – Classe 6).
+                    </p>
+                </div>
+                <div class="reveal" style="position: relative;">
+                    <div style="position: absolute; inset: -20px; border: 2px solid var(--primary); border-radius: 30px; z-index: 0; transform: rotate(-2deg);"></div>
+                    <img src="services-image/Screenshot_20-4-2026_11041_.jpeg" alt="EXO Building Operations" style="width: 100%; border-radius: 30px; box-shadow: var(--shadow); position: relative; z-index: 1;">
+                    <div style="position: absolute; bottom: -30px; right: -30px; background: var(--secondary); color: white; padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow); z-index: 2;" class="reveal">
+                        <span style="font-size: 3rem; font-weight: 900; color: var(--primary); display: block; line-height: 1;">30+</span>
+                        <span style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8rem;">Skilled Specialists</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section style="padding: 10rem 0; background: white;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 6rem;" class="reveal">
+                <h2 style="font-size: clamp(2.5rem, 4vw, 3.5rem); color: var(--secondary); margin-bottom: 1.5rem;" data-i18n="vision_title">Nossa Visão</h2>
+                <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;" data-i18n="vision_subtitle">Estabelecer o padrão internacional de mestria técnica na construção moderna.</p>
+            </div>
+            
+            <div class="grid-2-col">
+                <div class="vision-card reveal">
+                    <div class="vision-icon"><i class="fas fa-crown"></i></div>
+                    <h3 data-i18n="vision_card1_t">Construir Com Excelência</h3>
+                    <p data-i18n="vision_card1_p">Esforçamo-nos por entregar uma qualidade superior em cada projeto, garantindo durabilidade, precisão e artesanato que supera as expectativas.</p>
+                </div>
+                <div class="vision-card reveal">
+                    <div class="vision-icon"><i class="fas fa-handshake"></i></div>
+                    <h3 data-i18n="vision_card2_t">Entregar Confiança e Fiabilidade</h3>
+                    <p data-i18n="vision_card2_p">Estamos comprometidos em construir relacionamentos de longo prazo através de transparência, consistência e serviços fiáveis nos quais os nossos clientes podem confiar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section style="padding: 10rem 0; background: #0a0f1a; color: white; border-radius: 60px 60px 0 0;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 6rem;" class="reveal">
+                <h2 style="color: white; font-size: clamp(2.5rem, 4vw, 3.5rem); margin-bottom: 1.5rem;" data-i18n="mission_title">Nossa Missão</h2>
+                <p style="color: #94a3b8; max-width: 600px; margin: 0 auto;" data-i18n="mission_subtitle">Execução estratégica e integridade estrutural em toda a paisagem europeia.</p>
+            </div>
+
+            <div class="grid-3-col">
+                <div class="mission-card reveal">
+                    <div class="mission-number">01</div>
+                    <h4 data-i18n="mission_card1_t">Fornecer Soluções de Custo Eficaz</h4>
+                    <p data-i18n="mission_card1_p">Aspiramos a entregar serviços de alta qualidade a preços competitivos, garantindo valor sem comprometer os padrões.</p>
+                </div>
+                <div class="mission-card reveal">
+                    <div class="mission-number">02</div>
+                    <h4 data-i18n="mission_card2_t">Garantir a Satisfação do Cliente</h4>
+                    <p data-i18n="mission_card2_p">Focamo-nos em compreender as necessidades do cliente e entregar resultados que superem as expectativas através de qualidade, transparência e dedicação.</p>
+                </div>
+                <div class="mission-card reveal">
+                    <div class="mission-number">03</div>
+                    <h4 data-i18n="mission_card3_t">Manter Elevados Padrões de Segurança</h4>
+                    <p data-i18n="mission_card3_p">Priorizamos a segurança em todas as fases dos nossos projetos, seguindo diretrizes rigorosas para proteger a nossa equipa e clientes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Strip -->
+    <section style="background: var(--primary); padding: 4rem 0;">
+        <div class="container">
+            <div class="contact-strip reveal">
+                <div class="strip-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <span>Phone</span>
+                        <strong>+351 918 445 899</strong>
+                    </div>
+                </div>
+                <div class="strip-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <span>Location</span>
+                        <strong>Av. da Liberdade 144, Lisbon</strong>
+                    </div>
+                </div>
+                <div class="strip-item">
+                    <i class="fas fa-globe"></i>
+                    <div>
+                        <span>Web</span>
+                        <strong>www.exobuilding.pt</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid reveal">
+                <!-- Col 1: Brand -->
+                <div class="footer-brand">
+                    <img src="logo2.png" alt="EXO Building" class="footer-logo">
+                    <p>State-of-the-art construction and technical consultancy across Portugal and Europe.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/exobuilding/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Col 2: Navigation -->
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Services -->
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Foundations</a></li>
+                        <li><a href="services.html">Masonry</a></li>
+                        <li><a href="services.html">Insulation</a></li>
+                        <li><a href="services.html">Carpentry</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact & Map -->
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p style="margin-bottom: 0.5rem;"><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i> Avenida da Liberdade 144, Lisbon</p>
+                    <p><i class="fas fa-envelope" style="color: var(--primary); margin-right: 10px;"></i> <a href="mailto:secretaria@exobuilding.pt" style="color: inherit; text-decoration: none;">secretaria@exobuilding.pt</a></p>
+                    
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.3444738569424!2d-9.14660852342938!3d38.72141527176241!2m3!1f0!2f0!3f0!3m2!i1024!2i768!4f13.1!3m3!1m2!1s0xd1933777d967f3f%3A0xb35a39665679e099!2sAv.%20da%20Liberdade%20144%2C%201250-146%20Lisboa!5e0!3m2!1sen!2spt!4v1713697943567!5m2!1sen!2spt" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2022 EXO Building. All rights reserved.</p>
+                <div style="display: flex; gap: 2rem;">
+                    <a href="#" style="color: inherit; text-decoration: none;">Privacy Policy</a>
+                    <a href="#" style="color: inherit; text-decoration: none;">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | EXO Building Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="scrolled">
+        <div class="container nav-container">
+            <nav>
+                <a href="index.html" class="logo"><img src="logo.png" alt="EXO Building Logo"></a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link" data-i18n="nav_home">Início</a></li>
+                    <li><a href="projects.html" class="nav-link active" data-i18n="nav_projects">Projetos</a></li>
+                    <li><a href="services.html" class="nav-link" data-i18n="nav_services">Serviços</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="nav_about">Sobre</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contacto</a></li>
+                </ul>
+                <div class="lang-switcher">
+                    <button class="lang-btn"><i class="fas fa-globe"></i> Language</button>
+                    <div class="lang-dropdown">
+                        <span class="lang-option" onclick="changeLanguage('pt')">Português</span>
+                        <span class="lang-option" onclick="changeLanguage('en')">English</span>
+                        <span class="lang-option" onclick="changeLanguage('fr')">Français</span>
+                        <span class="lang-option" onclick="changeLanguage('nl')">Nederlands</span>
+                        <span class="lang-option" onclick="changeLanguage('zh')">中文</span>
+                        <span class="lang-option" onclick="changeLanguage('ur')">اردو</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section style="padding: 10rem 0; background: var(--secondary); color: white; overflow: hidden;">
+        <div class="container" style="display: flex; align-items: center; justify-content: space-between; gap: 4rem; flex-wrap: wrap;">
+            <div class="reveal" style="flex: 1; min-width: 300px;">
+                <h1 style="color: var(--white); font-size: clamp(2.5rem, 6vw, 4rem); line-height: 1.1; margin-bottom: 2rem;" data-i18n="section_projects">Portfólio de Excelência</h1>
+                <p style="color: #94a3b8; font-size: 1.2rem; max-width: 500px;" data-i18n="projects_subtitle">Uma galeria abrangente das nossas realizações estruturais, desde infraestruturas a projetos residenciais de luxo em toda a Europa.</p>
+            </div>
+            <div class="reveal" style="flex: 1; min-width: 300px; position: relative;">
+                <img src="4.png" alt="EXO Excellence" style="width: 100%; border-radius: 20px; box-shadow: 0 40px 80px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1);">
+                <div style="position: absolute; inset: 0; border-radius: 20px; background: linear-gradient(to top, var(--secondary), transparent); opacity: 0.2;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="filter-bar reveal">
+                <button class="filter-btn active" data-filter="abrantes">Abrantes Station</button>
+                <button class="filter-btn" data-filter="biscaia">Villa Biscaia</button>
+                <button class="filter-btn" data-filter="monaco">Hotel Monaco</button>
+                <button class="filter-btn" data-filter="santarem">Santarém</button>
+            </div>
+
+            <div class="gallery-grid" id="project-gallery">
+                <!-- Populated by script.js -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid reveal">
+                <!-- Col 1: Brand -->
+                <div class="footer-brand">
+                    <img src="logo2.png" alt="EXO Building" class="footer-logo">
+                    <p>State-of-the-art construction and technical consultancy across Portugal and Europe.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/exobuilding/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Col 2: Navigation -->
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Services -->
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Foundations</a></li>
+                        <li><a href="services.html">Masonry</a></li>
+                        <li><a href="services.html">Insulation</a></li>
+                        <li><a href="services.html">Carpentry</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact & Map -->
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p style="margin-bottom: 0.5rem;"><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i> Avenida da Liberdade 144, Lisbon</p>
+                    <p><i class="fas fa-envelope" style="color: var(--primary); margin-right: 10px;"></i> <a href="mailto:secretaria@exobuilding.pt" style="color: inherit; text-decoration: none;">secretaria@exobuilding.pt</a></p>
+                    
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.3444738569424!2d-9.14660852342938!3d38.72141527176241!2m3!1f0!2f0!3f0!3m2!i1024!2i768!4f13.1!3m3!1m2!1s0xd1933777d967f3f%3A0xb35a39665679e099!2sAv.%20da%20Liberdade%20144%2C%201250-146%20Lisboa!5e0!3m2!1sen!2spt!4v1713697943567!5m2!1sen!2spt" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2022 EXO Building. All rights reserved.</p>
+                <div style="display: flex; gap: 2rem;">
+                    <a href="#" style="color: inherit; text-decoration: none;">Privacy Policy</a>
+                    <a href="#" style="color: inherit; text-decoration: none;">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="close-lightbox">&times;</span>
+        <img src="" alt="Fullscreen Preview" class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

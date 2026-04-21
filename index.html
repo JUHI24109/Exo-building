@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXO Building | Precision Engineering & Luxury Construction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Especialistas em construção e consultoria de alta precisão em Portugal. Transformando visões em excelência estrutural.">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <nav>
+                <a href="index.html" class="logo"><img src="logo.png" alt="EXO Building Logo"></a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link active" data-i18n="nav_home">Início</a></li>
+                    <li><a href="projects.html" class="nav-link" data-i18n="nav_projects">Projetos</a></li>
+                    <li><a href="services.html" class="nav-link" data-i18n="nav_services">Serviços</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="nav_about">Sobre</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contacto</a></li>
+                </ul>
+                <div class="lang-switcher">
+                    <button class="lang-btn"><i class="fas fa-globe"></i> Idioma</button>
+                    <div class="lang-dropdown">
+                        <span class="lang-option" onclick="changeLanguage('pt')">Português</span>
+                        <span class="lang-option" onclick="changeLanguage('en')">English</span>
+                        <span class="lang-option" onclick="changeLanguage('fr')">Français</span>
+                        <span class="lang-option" onclick="changeLanguage('nl')">Nederlands</span>
+                        <span class="lang-option" onclick="changeLanguage('zh')">中文</span>
+                        <span class="lang-option" onclick="changeLanguage('ur')">اردو</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-container">
+            <div class="hero-content reveal">
+                <h1 data-i18n="hero_title">Engenharia e Construção de Alta Precisão.</h1>
+                <p data-i18n="hero_subtitle">Excelente arquitetura com precisão táctica e controlo operacional absoluto em Portugal e na Europa.</p>
+                <div class="hero-btns">
+                    <a href="projects.html" class="btn btn-primary" data-i18n="btn_discover">Descobrir Projetos</a>
+                    <a href="services.html" class="btn btn-outline" data-i18n="btn_expertise">Nossa Especialização</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section>
+        <div class="container">
+            <div class="card-section-header reveal">
+                <h2>Our Specialized Core Competencies</h2>
+                <p>We provide comprehensive high-end construction solutions with a focus on technical mastery and structural integrity.</p>
+            </div>
+
+            <div class="service-grid">
+                <div class="service-card reveal">
+                    <i class="fas fa-hammer"></i>
+                    <h3>Foundations</h3>
+                    <p>Site preparation and expert ground excavations for project stability and structural longevity.</p>
+                </div>
+                <div class="service-card reveal">
+                    <i class="fas fa-layer-group"></i>
+                    <h3>Concrete Work</h3>
+                    <p>Core reinforced structures, columns, and slabs built for maximum durability and precision.</p>
+                </div>
+                <div class="service-card reveal">
+                    <i class="fas fa-border-all"></i>
+                    <h3>Masonry</h3>
+                    <p>Traditional and modern brickwork solutions tailored for high-end residential aesthetics.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 5rem;" class="reveal">
+                <a href="services.html" class="btn btn-primary">Explore All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section style="background: var(--accent);">
+        <div class="container">
+            <div class="card-section-header reveal">
+                <h2 data-i18n="section_projects_home">Projetos Emblemáticos Recentes</h2>
+                <p data-i18n="projects_home_subtitle">Uma seleção criteriosa das nossas reabilitações estruturais de alto nível e construções de luxo.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <a href="projects.html?filter=abrantes" class="project-card reveal">
+                    <img src="abrantesastaiton4/img-7.jpeg" alt="Estação de Abrantes 4">
+                    <div class="project-overlay"><h3 data-i18n="proj_abrantes">Estação de Abrantes 4</h3></div>
+                </a>
+                <a href="projects.html?filter=biscaia" class="project-card reveal">
+                    <img src="Biscaia/img-1.jpg" alt="Villa Biscaia">
+                    <div class="project-overlay"><h3 data-i18n="proj_biscaia">Villa Biscaia</h3></div>
+                </a>
+                <a href="projects.html?filter=monaco" class="project-card reveal">
+                    <img src="Hotel-MONACO/aad8fe56-019c-41de-a619-92ae25ec29b7.jpeg" alt="Hotel Mónaco">
+                    <div class="project-overlay"><h3 data-i18n="proj_monaco">Hotel Mónaco</h3></div>
+                </a>
+                <a href="projects.html?filter=santarem" class="project-card reveal santarem">
+                    <img src="IMG-20240726-WA0061.jpg" alt="Projeto Santarém">
+                    <div class="project-overlay"><h3 data-i18n="proj_santarem">Projeto de Santarém</h3></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid reveal">
+                <!-- Col 1: Brand -->
+                <div class="footer-brand">
+                    <img src="logo2.png" alt="EXO Building" class="footer-logo">
+                    <p data-i18n="footer_brand">Construção de vanguarda e consultoria técnica em Portugal e no resto da Europa.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/exobuilding/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Col 2: Navigation -->
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Services -->
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Foundations</a></li>
+                        <li><a href="services.html">Masonry</a></li>
+                        <li><a href="services.html">Insulation</a></li>
+                        <li><a href="services.html">Carpentry</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact & Map -->
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p style="margin-bottom: 0.5rem;"><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i> Avenida da Liberdade 144, Lisbon</p>
+                    <p><i class="fas fa-envelope" style="color: var(--primary); margin-right: 10px;"></i> <a href="mailto:secretaria@exobuilding.pt" style="color: inherit; text-decoration: none;">secretaria@exobuilding.pt</a></p>
+                    
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.3444738569424!2d-9.14660852342938!3d38.72141527176241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1933777d967f3f%3A0xb35a39665679e099!2sAv.%20da%20Liberdade%20144%2C%201250-146%20Lisboa!5e0!3m2!1sen!2spt!4v1713697943567!5m2!1sen!2spt" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-i18n="copyright">© 2022 EXO Building. Todos os direitos reservados.</p>
+                <div style="display: flex; gap: 2rem;">
+                    <a href="#" style="color: inherit; text-decoration: none;">Política de Privacidade</a>
+                    <a href="#" style="color: inherit; text-decoration: none;">Termos de Serviço</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
