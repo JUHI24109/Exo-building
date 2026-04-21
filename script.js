@@ -227,7 +227,7 @@ const translations = {
 };
 
 function changeLanguage(lang) {
-    localStorage.setItem('exo_lang', lang);
+    sessionStorage.setItem('exo_lang', lang);
     document.documentElement.lang = lang;
     
     // Update text content
@@ -438,7 +438,7 @@ document.getElementById('close-lightbox')?.addEventListener('click', () => {
 // Final Initialization
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Set Language
-    const savedLang = localStorage.getItem('exo_lang') || 'pt';
+    const savedLang = sessionStorage.getItem('exo_lang') || 'pt';
     changeLanguage(savedLang);
 
     // 2. Init Gallery (if exists)
