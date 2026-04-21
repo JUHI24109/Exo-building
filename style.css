@@ -357,7 +357,7 @@ header.scrolled .logo img {
 footer {
     background: #0a0f1a;
     color: var(--white);
-    padding: 6rem 0 3rem;
+    padding: 4rem 0 2rem;
     position: relative;
     overflow: hidden;
 }
@@ -365,13 +365,13 @@ footer {
 .footer-grid {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr 0.8fr 1.2fr;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 .footer-brand .footer-logo {
-    height: 80px;
+    height: 60px;
     width: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     transition: var(--transition);
     mix-blend-mode: lighten;
     filter: brightness(1.1);
@@ -383,7 +383,7 @@ footer {
 }
 
 .footer-brand p {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: #94a3b8;
     line-height: 1.6;
     max-width: 300px;
@@ -391,8 +391,8 @@ footer {
 
 .footer-col h4 {
     color: var(--white);
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
     position: relative;
     padding-bottom: 0.8rem;
     text-transform: uppercase;
@@ -400,11 +400,11 @@ footer {
 }
 
 .footer-links li {
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 
 .footer-links a {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .footer-links {
@@ -426,12 +426,12 @@ footer {
 .social-icons {
     display: flex;
     gap: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
 }
 
 .social-icons a {
-    width: 35px;
-    height: 35px;
+    width: 32px;
+    height: 32px;
     background: rgba(255, 255, 255, 0.05);
     display: flex;
     align-items: center;
@@ -450,11 +450,11 @@ footer {
 }
 
 .map-container {
-    height: 150px;
+    height: 120px;
     width: 100%;
     border-radius: var(--radius-sm);
     overflow: hidden;
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -467,13 +467,13 @@ footer {
 
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
-    margin-top: 5rem;
-    padding-top: 2rem;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #475569;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
 }
 .lightbox {
     position: fixed;
