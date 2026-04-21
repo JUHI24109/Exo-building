@@ -401,6 +401,15 @@ function initFilters() {
             btns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
 
+            // Update Page Hero Background based on project first image
+            const project = projectData.find(p => p.id === filter);
+            if (project && project.images.length > 0) {
+                const heroBg = document.querySelector('.projects-hero-bg');
+                if (heroBg) {
+                    heroBg.style.backgroundImage = `linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.4)), url('${project.images[0]}')`;
+                }
+            }
+
             // Card Filter
             const cards = document.querySelectorAll('.project-card');
             cards.forEach(card => {
