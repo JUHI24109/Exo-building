@@ -289,6 +289,36 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
+// Counters Animation
+const animateCounters = () => {
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200;
+
+    counters.forEach(counter => {
+        const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+            const inc = target / speed;
+
+            if (count < target) {
+                counter.innerText = Math.ceil(count + inc);
+                setTimeout(updateCount, 20);
+            } else {
+                counter.innerText = target;
+            }
+        };
+
+        const rect = counter.getBoundingClientRect();
+        if(rect.top < window.innerHeight && counter.innerText === '0') {
+            updateCount();
+        }
+    });
+};
+
+window.addEventListener('scroll', () => {
+    animateCounters();
+});
+
 // --- Project Gallery Logic ---
 
 const projectData = [
