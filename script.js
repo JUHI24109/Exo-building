@@ -490,4 +490,17 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // 5. Observe Reveal Elements
     document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // 6. Language Dropdown Toggle
+    const langBtn = document.querySelector('.lang-btn');
+    const langDropdown = document.querySelector('.lang-dropdown');
+    if (langBtn && langDropdown) {
+        langBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            langDropdown.style.display = (langDropdown.style.display === 'block') ? 'none' : 'block';
+        });
+        document.addEventListener('click', () => {
+            langDropdown.style.display = 'none';
+        });
+    }
 });
