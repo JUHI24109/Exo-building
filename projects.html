@@ -22,14 +22,10 @@
                     <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contacto</a></li>
                 </ul>
                 <div class="lang-switcher">
-                    <button class="lang-btn"><i class="fas fa-globe"></i> <span data-i18n="lang_label">Idioma</span></button>
+                    <button class="lang-btn"><i class="fas fa-globe"></i> <span data-i18n="lang_label">Idioma</span> <i class="fas fa-chevron-down" style="font-size: 0.6rem; opacity: 0.6;"></i></button>
                     <div class="lang-dropdown">
                         <span class="lang-option" onclick="changeLanguage('pt')">Português</span>
                         <span class="lang-option" onclick="changeLanguage('en')">English</span>
-                        <span class="lang-option" onclick="changeLanguage('fr')">Français</span>
-                        <span class="lang-option" onclick="changeLanguage('nl')">Nederlands</span>
-                        <span class="lang-option" onclick="changeLanguage('zh')">中文</span>
-                        <span class="lang-option" onclick="changeLanguage('ur')">اردو</span>
                     </div>
                 </div>
             </nav>
@@ -103,7 +99,7 @@
                 <!-- Col 4: Contact & Map -->
                 <div class="footer-col">
                     <h4 data-i18n="nav_contact">Contacto</h4>
-                    <p style="margin-bottom: 0.5rem;"><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i> Avenida da Liberdade 144, Lisbon</p>
+                    <p style="margin-bottom: 0.5rem;"><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i> <span data-i18n="address_text">Avenida da Liberdade, Nº 144, 2 Dtº, 1250-146, Lisbon, Portugal.</span></p>
                     <p style="margin-bottom: 0.5rem;"><i class="fas fa-phone-alt" style="color: var(--primary); margin-right: 10px;"></i> <a href="tel:+351918445810" style="color: inherit; text-decoration: none;">+351 918 445 810</a></p>
                     <p><i class="fas fa-envelope" style="color: var(--primary); margin-right: 10px;"></i> <a href="mailto:secretaria@exobuilding.pt" style="color: inherit; text-decoration: none;">secretaria@exobuilding.pt</a></p>
                     
@@ -125,8 +121,8 @@
 
     <!-- Lightbox -->
     <div class="lightbox" id="lightbox">
-        <span class="lightbox-close" id="close-lightbox">&times;</span>
-        <img src="" alt="Fullscreen Preview" class="lightbox-content" id="lightbox-img">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <img src="" alt="" class="lightbox-content" id="lightbox-img">
     </div>
 
     <script src="script.js"></script>

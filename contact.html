@@ -22,14 +22,10 @@
                     <li><a href="contact.html" class="nav-link active" data-i18n="nav_contact">Contacto</a></li>
                 </ul>
                 <div class="lang-switcher">
-                    <button class="lang-btn"><i class="fas fa-globe"></i> <span data-i18n="lang_label">Idioma</span></button>
+                    <button class="lang-btn"><i class="fas fa-globe"></i> <span data-i18n="lang_label">Idioma</span> <i class="fas fa-chevron-down" style="font-size: 0.6rem; opacity: 0.6;"></i></button>
                     <div class="lang-dropdown">
                         <span class="lang-option" onclick="changeLanguage('pt')">Português</span>
                         <span class="lang-option" onclick="changeLanguage('en')">English</span>
-                        <span class="lang-option" onclick="changeLanguage('fr')">Français</span>
-                        <span class="lang-option" onclick="changeLanguage('nl')">Nederlands</span>
-                        <span class="lang-option" onclick="changeLanguage('zh')">中文</span>
-                        <span class="lang-option" onclick="changeLanguage('ur')">اردو</span>
                     </div>
                 </div>
             </nav>
@@ -38,17 +34,17 @@
 
     <section style="position: relative; margin-top: 85px; padding: 200px 0; min-height: 600px; aspect-ratio: 21 / 9; background: var(--secondary); color: white; overflow: hidden; display: flex; align-items: center;">
         <!-- Background Image Aligned to Top -->
-        <div style="position: absolute; inset: 0; background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.4)), url('im1.jpeg'); background-size: cover; background-position: center top; z-index: 0;"></div>
+        <div style="position: absolute; inset: 0; background: url('CONTACTPAGEBACK.jpeg'); background-size: cover; background-position: center top; z-index: 0;"></div>
         
         <div class="container" style="position: relative; z-index: 1;">
-            <div class="reveal" style="max-width: 800px;">
-                <h1 style="color: var(--white); font-size: clamp(3.5rem, 8vw, 5rem); line-height: 1; margin-bottom: 2.5rem; text-shadow: 0 10px 30px rgba(0,0,0,0.5); font-weight: 900; letter-spacing: -0.03em;" data-i18n="contact_title">Entre em Contacto</h1>
-                <p style="color: #f8fafc; font-size: 1.4rem; max-width: 650px; line-height: 1.6; text-shadow: 0 2px 10px rgba(0,0,0,0.3);" data-i18n="contact_subtitle">Contacte a nossa equipa para consultoria técnica ou consultas de projetos. Lideramos empreendimentos de construção complexos em Portugal e na Europa.</p>
+            <div class="reveal" style="max-width: 850px; background: rgba(255, 255, 255, 0.4); padding: 4rem; border-radius: 30px; backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.3); box-shadow: 0 30px 60px rgba(0,0,0,0.1);">
+                <h1 style="color: #000000; font-size: clamp(3.5rem, 8vw, 5rem); line-height: 1; margin-bottom: 2.5rem; text-shadow: none; font-weight: 900; letter-spacing: -0.03em;" data-i18n="contact_title">Entre em Contacto</h1>
+                <p style="color: #333333; font-size: 1.4rem; max-width: 700px; line-height: 1.6; text-shadow: none; margin-bottom: 2.5rem;" data-i18n="contact_subtitle">Contacte a nossa equipa para consultoria técnica ou consultas de projetos. Lideramos empreendimentos de construção complexos em Portugal e na Europa.</p>
                 
                 <div class="contact-header-socials" style="display: flex; gap: 2.5rem;">
-                    <a href="https://wa.me/351918445810" target="_blank" style="color: #25D366; font-size: 2.5rem; transition: 0.3s; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.instagram.com/exobuilding/" target="_blank" style="color: #E1306C; font-size: 2.5rem; transition: 0.3s; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'"><i class="fab fa-instagram"></i></a>
-                    <a href="#" target="_blank" style="color: #0077B5; font-size: 2.5rem; transition: 0.3s; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://wa.me/351918445810" target="_blank" style="color: #25D366; font-size: 3rem; transition: 0.3s; filter: drop-shadow(0 4px 15px rgba(37, 211, 102, 0.5));" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/exobuilding/" target="_blank" style="color: #FF2D55; font-size: 3rem; transition: 0.3s; filter: drop-shadow(0 4px 15px rgba(255, 45, 85, 0.5));" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank" style="color: #00A0DC; font-size: 3rem; transition: 0.3s; filter: drop-shadow(0 4px 15px rgba(0, 160, 220, 0.5));" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
@@ -56,18 +52,18 @@
 
     <section style="position: relative; padding: 10rem 0; overflow: hidden;">
         <!-- Background Image with Overlay -->
-        <div style="position: absolute; inset: 0; background: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('im1.jpeg'); background-size: cover; background-position: center; z-index: 0;"></div>
+        <div style="position: absolute; inset: 0; background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('CONTACTPAGEBACK.jpeg'); background-size: cover; background-position: center; z-index: 0;"></div>
         
         <div class="container" style="position: relative; z-index: 1;">
             <div class="split-section" style="gap: 4rem;">
                 <!-- Contact Info with Golden Border -->
                 <div class="reveal" style="background: rgba(255,255,255,0.8); padding: 3rem; border: 2px solid var(--primary); border-radius: 20px; backdrop-filter: blur(10px); box-shadow: var(--shadow);">
                     <h2 style="font-size: 2.5rem; margin-bottom: 2rem;" data-i18n="office_title">Escritório de Lisboa</h2>
-                    <p style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 2rem;">
-                        Avenida da Liberdade 144, Lisboa, Portugal.
+                    <p style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 2rem;" data-i18n="address_text">
+                        Avenida da Liberdade, Nº 144, 2 Dtº, 1250-146, Lisbon, Portugal.
                     </p>
                     <p style="font-weight: 700; font-size: 1.5rem; color: var(--primary); margin-bottom: 1rem;">
-                        +351 918445810
+                        +351 918 445 810
                     </p>
                     <p style="font-size: 1.1rem; color: var(--secondary); margin-bottom: 3rem;">
                         Secretaria@exobuilding.pt
@@ -82,8 +78,8 @@
                     <!-- Mensagens de Sucesso/Erro -->
                     <div data-fs-success style="display: none; text-align: center; padding: 2rem; background: rgba(197, 160, 68, 0.1); border-radius: 8px; border: 1px solid var(--primary); margin-bottom: 2rem;">
                         <i class="fas fa-check-circle" style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;"></i>
-                        <h3 style="color: var(--secondary);">Mensagem Enviada com Sucesso!</h3>
-                        <p style="color: var(--text-muted);">Obrigado por contactar a EXO Building. Entraremos em contacto brevemente.</p>
+                        <h3 style="color: var(--secondary);" data-i18n="form_success_t">Mensagem Enviada com Sucesso!</h3>
+                        <p style="color: var(--text-muted);" data-i18n="form_success_p">Obrigado por contactar a EXO Building. Entraremos em contacto brevemente.</p>
                     </div>
                     <div data-fs-error style="display: none; text-align: center; padding: 1rem; background: #fee2e2; color: #991b1b; border-radius: 8px; margin-bottom: 2rem;"></div>
 
@@ -101,16 +97,20 @@
                         <div class="form-group">
                             <label for="service" data-i18n="form_service">Serviço Requerido</label>
                             <select id="service" name="service" class="form-control" required data-fs-field data-i18n-select="form_serv">
-                                <option value="" disabled selected>Selecione um Serviço</option>
-                                <option value="Foundations">Fundações e Escavações</option>
+                                <option value="" disabled selected data-i18n="form_serv_placeholder">Selecione um Serviço</option>
+                                <option value="Metal Framing">Sistemas de Estrutura Metálica e Pladur</option>
                                 <option value="Concrete">Colunas, Vigas e Lajes</option>
                                 <option value="Masonry">Alvenaria e Tijolos</option>
-                                <option value="Framework">Estrutura</option>
+                                <option value="Framework">Estrutura e Cofragem</option>
                                 <option value="Flooring">Regularização de Pisos</option>
                                 <option value="Carpentry">Carpintaria</option>
-                                <option value="Plastering">Estuque e Reboco</option>
+                                <option value="Reinforced Concrete">Estruturas de Betão Armado</option>
+                                <option value="Plastering">Estuque, Reboco e Acabamentos</option>
+                                <option value="Ceramic">Ladrilhagem e Cerâmica</option>
+                                <option value="Foundations">Fundações e Escavações</option>
+                                <option value="Steel">Armadura de Aço</option>
+                                <option value="Plumbing">Canalização e Pichelaria</option>
                                 <option value="Insulation">Isolamento Exterior (ETICS)</option>
-                                <option value="Consultancy">Consultoria Técnica</option>
                             </select>
                             <span data-fs-error="service" style="color: #dc2626; font-size: 0.8rem; margin-top: 5px; display: block;"></span>
                         </div>
@@ -180,7 +180,7 @@
                 <!-- Col 4: Contact & Map -->
                 <div class="footer-col">
                     <h4 data-i18n="nav_contact">Contacto</h4>
-                    <p style="margin-bottom: 0.5rem;"><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i> Avenida da Liberdade 144, Lisbon</p>
+                    <p style="margin-bottom: 0.5rem;"><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i> <span data-i18n="address_text">Avenida da Liberdade, Nº 144, 2 Dtº, 1250-146, Lisbon, Portugal.</span></p>
                     <p style="margin-bottom: 0.5rem;"><i class="fas fa-phone-alt" style="color: var(--primary); margin-right: 10px;"></i> <a href="tel:+351918445810" style="color: inherit; text-decoration: none;">+351 918 445 810</a></p>
                     <p><i class="fas fa-envelope" style="color: var(--primary); margin-right: 10px;"></i> <a href="mailto:secretaria@exobuilding.pt" style="color: inherit; text-decoration: none;">secretaria@exobuilding.pt</a></p>
                     
@@ -199,6 +199,11 @@
             </div>
         </div>
     </footer>
+
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <img src="" alt="" class="lightbox-content" id="lightbox-img">
+    </div>
 
     <script src="script.js"></script>
 </body>

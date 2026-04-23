@@ -22,14 +22,10 @@
                     <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contacto</a></li>
                 </ul>
                 <div class="lang-switcher">
-                    <button class="lang-btn"><i class="fas fa-globe"></i> <span data-i18n="lang_label">Idioma</span></button>
+                    <button class="lang-btn"><i class="fas fa-globe"></i> <span data-i18n="lang_label">Idioma</span> <i class="fas fa-chevron-down" style="font-size: 0.6rem; opacity: 0.6;"></i></button>
                     <div class="lang-dropdown">
                         <span class="lang-option" onclick="changeLanguage('pt')">Português</span>
                         <span class="lang-option" onclick="changeLanguage('en')">English</span>
-                        <span class="lang-option" onclick="changeLanguage('fr')">Français</span>
-                        <span class="lang-option" onclick="changeLanguage('nl')">Nederlands</span>
-                        <span class="lang-option" onclick="changeLanguage('zh')">中文</span>
-                        <span class="lang-option" onclick="changeLanguage('ur')">اردو</span>
                     </div>
                 </div>
             </nav>
@@ -48,79 +44,145 @@
         </div>
     </section>
 
-    <section>
+    <section style="background: #f1f5f9; padding: 100px 0;">
         <div class="container">
             <div class="service-grid">
                 <!-- 1 -->
-                <div class="service-card reveal">
+                <div class="service-card reveal" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
                     <div class="service-image-container">
-                        <img src="services-image/Foundations & Excavations.jpeg" alt="Foundations" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="services-image/Metal framing and plasterboard systems.jpeg" alt="Metal Framing" style="width:100%; height:100%; object-fit:cover;">
                     </div>
-                    <h3 data-i18n="serv_f_t">Fundações e Escavações</h3>
-                    <p data-i18n="serv_f_p">Preparação do local e escavações especializadas de solo para garantir a estabilidade do projeto e excelência na capacidade de carga.</p>
+                    <div style="padding: 2rem;">
+                        <h3 data-i18n="serv_mf_t">Metal framing and plasterboard systems</h3>
+                        <p data-i18n="serv_mf_p">Precision installation of metal structures and plasterboard for modern interior partitions.</p>
+                    </div>
                 </div>
                 <!-- 2 -->
-                <div class="service-card reveal">
+                <div class="service-card reveal" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
                     <div class="service-image-container">
-                        <img src="services-image/Columns, Beams & Slabs.jpeg" alt="Concrete" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="services-image/Columns, beams, and slabs.jpeg" alt="Concrete" style="width:100%; height:100%; object-fit:cover;">
                     </div>
-                    <h3 data-i18n="serv_c_t">Colunas, Vigas e Lajes</h3>
-                    <p data-i18n="serv_c_p">Estruturas de betão armado projetadas para máxima durabilidade e longevidade estrutural em construções complexas.</p>
+                    <div style="padding: 2rem;">
+                        <h3 data-i18n="serv_c_t">Columns, beams, and slabs</h3>
+                        <p data-i18n="serv_c_p">Structural concrete elements designed for maximum load-bearing capacity and durability.</p>
+                    </div>
                 </div>
                 <!-- 3 -->
-                <div class="service-card reveal">
+                <div class="service-card reveal" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
                     <div class="service-image-container">
-                        <img src="services-image/Masonry & Brickwork.jpeg" alt="Masonry" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="services-image/Masonry and brickwork.jpeg" alt="Masonry" style="width:100%; height:100%; object-fit:cover;">
                     </div>
-                    <h3 data-i18n="serv_m_t">Alvenaria e Tijolos</h3>
-                    <p data-i18n="serv_m_p">Trabalhos de tijolo e bloco de alta qualidade para estética residencial e soluções de divisórias robustas.</p>
+                    <div style="padding: 2rem;">
+                        <h3 data-i18n="serv_m_t">Masonry and brickwork</h3>
+                        <p data-i18n="serv_m_p">High-quality brick and block work for robust and aesthetic wall solutions.</p>
+                    </div>
                 </div>
                 <!-- 4 -->
-                <div class="service-card reveal">
+                <div class="service-card reveal" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
                     <div class="service-image-container">
                         <img src="services-image/Framework.jpeg" alt="Framework" style="width:100%; height:100%; object-fit:cover;">
                     </div>
-                    <h3 data-i18n="serv_fr_t">Estrutura</h3>
-                    <p data-i18n="serv_fr_p">Execução profissional de cofragens e estruturas de betão para geometrias arquitetónicas complexas.</p>
+                    <div style="padding: 2rem;">
+                        <h3 data-i18n="serv_fr_t">Framework</h3>
+                        <p data-i18n="serv_fr_p">Expert formwork and framework execution for complex architectural designs.</p>
+                    </div>
                 </div>
                 <!-- 5 -->
-                <div class="service-card reveal">
+                <div class="service-card reveal" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
                     <div class="service-image-container">
                         <img src="services-image/Floor Screeding.jpeg" alt="Floor Screeding" style="width:100%; height:100%; object-fit:cover;">
                     </div>
-                    <h3 data-i18n="serv_fs_t">Regularização de Pisos</h3>
-                    <p data-i18n="serv_fs_p">Nivelamento e acabamento de pisos estruturais para pavimentos de alta qualidade e acabamentos sofisticados.</p>
+                    <div style="padding: 2rem;">
+                        <h3 data-i18n="serv_fs_t">Floor Screeding</h3>
+                        <p data-i18n="serv_fs_p">Perfect floor leveling and preparation for all types of high-end finishes.</p>
+                    </div>
                 </div>
                 <!-- 6 -->
-                <div class="service-card reveal">
+                <div class="service-card reveal" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
                     <div class="service-image-container">
-                        <img src="services-image/Carpentry.jpg" alt="Carpentry" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="services-image/Carpentry.jpeg" alt="Carpentry" style="width:100%; height:100%; object-fit:cover;">
                     </div>
-                    <h3 data-i18n="serv_cr_t">Carpintaria</h3>
-                    <p data-i18n="serv_cr_p">Carpintaria estrutural e decorativa para interiores, incluindo estruturas e acabamentos por medida.</p>
+                    <div style="padding: 2rem;">
+                        <h3 data-i18n="serv_cr_t">Carpintaria</h3>
+                        <p data-i18n="serv_cr_p">Custom structural and decorative woodwork for premium residential projects.</p>
+                    </div>
                 </div>
                 <!-- 7 -->
-                <div class="service-card reveal">
+                <div class="service-card reveal" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
                     <div class="service-image-container">
-                        <img src="services-image/Plastering & Rendering.jpeg" alt="Plastering" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="services-image/Reinforced concrete structures.jpeg" alt="Reinforced Concrete" style="width:100%; height:100%; object-fit:cover;">
                     </div>
-                    <h3 data-i18n="serv_pr_t">Estuque e Reboco</h3>
-                    <p data-i18n="serv_pr_p">Rebocos lisos e sistemas de estuque avançados para um acabamento arquitetónico impecável.</p>
+                    <div style="padding: 2rem;">
+                        <h3 data-i18n="serv_rc_t">Reinforced concrete structures</h3>
+                        <p data-i18n="serv_rc_p">Construction of durable and stable structures using high-grade reinforced concrete.</p>
+                    </div>
                 </div>
                 <!-- 8 -->
-                <div class="service-card reveal">
+                <div class="service-card reveal" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
                     <div class="service-image-container">
-                        <img src="services-image/Exterior Insulation (ETICS).jpg" alt="ETICS" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="services-image/Plastering, rendering, and finishing works.jpeg" alt="Plastering" style="width:100%; height:100%; object-fit:cover;">
                     </div>
-                    <h3 data-i18n="serv_et_t">Isolamento Exterior (ETICS)</h3>
-                    <p data-i18n="serv_et_p">Sistemas avançados de isolamento térmico para melhorar a eficiência energética e a longevidade do edifício.</p>
+                    <div style="padding: 2rem;">
+                        <h3 data-i18n="serv_pr_t">Plastering, rendering, and finishing works</h3>
+                        <p data-i18n="serv_pr_p">Comprehensive surface finishing including advanced plastering and rendering techniques.</p>
+                    </div>
+                </div>
+                <!-- 9 -->
+                <div class="service-card reveal" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                    <div class="service-image-container">
+                        <img src="services-image/Ceramic tiling.jpeg" alt="Ceramic tiling" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div style="padding: 2rem;">
+                        <h3 data-i18n="serv_ct_t">Ceramic tiling</h3>
+                        <p data-i18n="serv_ct_p">Professional installation of high-quality ceramic and porcelain tiles for floors and walls.</p>
+                    </div>
+                </div>
+                <!-- 10 -->
+                <div class="service-card reveal" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                    <div class="service-image-container">
+                        <img src="services-image/Foundations and excavations.jpeg" alt="Foundations" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div style="padding: 2rem;">
+                        <h3 data-i18n="serv_f_t">Foundations and excavations</h3>
+                        <p data-i18n="serv_f_p">Specialized ground preparation and excavation for solid building foundations.</p>
+                    </div>
+                </div>
+                <!-- 11 -->
+                <div class="service-card reveal" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                    <div class="service-image-container">
+                        <img src="services-image/Steel Reinforcement.jpeg" alt="Steel Reinforcement" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div style="padding: 2rem;">
+                        <h3 data-i18n="serv_sr_t">Steel Reinforcement</h3>
+                        <p data-i18n="serv_sr_p">Professional placement of steel bars to ensure maximum structural integrity.</p>
+                    </div>
+                </div>
+                <!-- 12 -->
+                <div class="service-card reveal" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                    <div class="service-image-container">
+                        <img src="services-image/Plumbing.jpeg" alt="Plumbing" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div style="padding: 2rem;">
+                        <h3 data-i18n="serv_pl_t">Plumbing</h3>
+                        <p data-i18n="serv_pl_p">Complete plumbing solutions including water supply and drainage systems.</p>
+                    </div>
+                </div>
+                <!-- 13 -->
+                <div class="service-card reveal" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                    <div class="service-image-container">
+                        <img src="services-image/Exterior Insulation System.jpeg" alt="Exterior Insulation" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div style="padding: 2rem;">
+                        <h3 data-i18n="serv_et_t">Exterior Insulation System</h3>
+                        <p data-i18n="serv_et_p">Advanced ETICS systems for superior thermal efficiency and protection.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Professional Section -->
-    <section style="background: var(--accent);">
+    <section style="background: var(--accent); padding: 100px 0;">
         <div class="container">
             <div class="split-section">
                 <div class="split-image reveal">
@@ -164,6 +226,18 @@
                     </ul>
                 </div>
 
+                <!-- Col 2: Navigation -->
+                <div class="footer-col">
+                    <h4 data-i18n="f_nav">Navegação</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                        <li><a href="projects.html" data-i18n="nav_projects">Projetos</a></li>
+                        <li><a href="services.html" data-i18n="nav_services">Serviços</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">Sobre Nós</a></li>
+                        <li><a href="contact.html" data-i18n="nav_contact">Contacto</a></li>
+                    </ul>
+                </div>
+
                 <!-- Col 3: Services -->
                 <div class="footer-col">
                     <h4 data-i18n="f_serv">Serviços</h4>
@@ -178,7 +252,7 @@
                 <!-- Col 4: Contact & Map -->
                 <div class="footer-col">
                     <h4 data-i18n="nav_contact">Contacto</h4>
-                    <p style="margin-bottom: 0.5rem;"><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i> Avenida da Liberdade 144, Lisbon</p>
+                    <p style="margin-bottom: 0.5rem;"><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i> <span data-i18n="address_text">Avenida da Liberdade, Nº 144, 2 Dtº, 1250-146, Lisbon, Portugal.</span></p>
                     <p style="margin-bottom: 0.5rem;"><i class="fas fa-phone-alt" style="color: var(--primary); margin-right: 10px;"></i> <a href="tel:+351918445810" style="color: inherit; text-decoration: none;">+351 918 445 810</a></p>
                     <p><i class="fas fa-envelope" style="color: var(--primary); margin-right: 10px;"></i> <a href="mailto:secretaria@exobuilding.pt" style="color: inherit; text-decoration: none;">secretaria@exobuilding.pt</a></p>
                     
@@ -197,6 +271,11 @@
             </div>
         </div>
     </footer>
+
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <img src="" alt="" class="lightbox-content" id="lightbox-img">
+    </div>
 
     <script src="script.js"></script>
 </body>

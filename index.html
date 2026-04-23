@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <meta name="description" content="Especialistas em construção e consultoria de alta precisão em Portugal. Transformando visões em excelência estrutural.">
+    <meta name="description"
+        content="Especialistas em construção e consultoria de alta precisão em Portugal. Transformando visões em excelência estrutural.">
 </head>
+
 <body>
 
     <header>
@@ -23,14 +26,11 @@
                     <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contacto</a></li>
                 </ul>
                 <div class="lang-switcher">
-                    <button class="lang-btn"><i class="fas fa-globe"></i> <span data-i18n="lang_label">Idioma</span></button>
+                    <button class="lang-btn"><i class="fas fa-globe"></i> <span
+                            data-i18n="lang_label">Idioma</span> <i class="fas fa-chevron-down" style="font-size: 0.6rem; opacity: 0.6;"></i></button>
                     <div class="lang-dropdown">
                         <span class="lang-option" onclick="changeLanguage('pt')">Português</span>
                         <span class="lang-option" onclick="changeLanguage('en')">English</span>
-                        <span class="lang-option" onclick="changeLanguage('fr')">Français</span>
-                        <span class="lang-option" onclick="changeLanguage('nl')">Nederlands</span>
-                        <span class="lang-option" onclick="changeLanguage('zh')">中文</span>
-                        <span class="lang-option" onclick="changeLanguage('ur')">اردو</span>
                     </div>
                 </div>
             </nav>
@@ -42,7 +42,8 @@
         <div class="container hero-container">
             <div class="hero-content reveal">
                 <h1 data-i18n="hero_title">Engenharia e Construção de Alta Precisão.</h1>
-                <p data-i18n="hero_subtitle">Excelente arquitetura com precisão táctica e controlo operacional absoluto em Portugal e na Europa.</p>
+                <p data-i18n="hero_subtitle">Excelente arquitetura com precisão táctica e controlo operacional absoluto
+                    em Portugal e na Europa.</p>
                 <div class="hero-btns">
                     <a href="projects.html" class="btn btn-primary" data-i18n="btn_discover">Descobrir Projetos</a>
                     <a href="services.html" class="btn btn-outline" data-i18n="btn_expertise">Nossa Especialização</a>
@@ -52,39 +53,44 @@
     </section>
 
     <!-- Services Overview -->
-    <section>
+    <section class="services-overview-section">
         <div class="container">
             <div class="card-section-header reveal">
                 <h2 data-i18n="section_services">Especialização Técnica</h2>
-                <p data-i18n="services_subtitle">Soluções estruturais de alto nível para projetos residenciais e comerciais de luxo em todo o Portugal.</p>
+                <p data-i18n="services_subtitle">Soluções estruturais de alto nível para projetos residenciais e
+                    comerciais de luxo em todo o Portugal.</p>
             </div>
 
             <div class="service-grid">
                 <div class="service-card reveal">
                     <div class="service-image-container">
-                        <img src="services-image/Foundations & Excavations.jpeg" alt="Foundations" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="services-image/Metal framing and plasterboard systems.jpeg" alt="Metal Framing"
+                            style="width:100%; height:100%; object-fit:cover;">
                     </div>
-                    <h3 data-i18n="serv_f_t">Fundações e Escavações</h3>
-                    <p data-i18n="serv_f_p">Preparação do local e escavações especializadas de solo para garantir a estabilidade do projeto e excelência na capacidade de carga.</p>
+                    <h3 data-i18n="serv_mf_t">Metal framing and plasterboard systems</h3>
+                    <p data-i18n="serv_mf_p">Precision installation of metal structures and plasterboard for modern interior partitions.</p>
                 </div>
                 <div class="service-card reveal">
                     <div class="service-image-container">
-                        <img src="services-image/Columns, Beams & Slabs.jpeg" alt="Concrete" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="services-image/Columns, beams, and slabs.jpeg" alt="Concrete"
+                            style="width:100%; height:100%; object-fit:cover;">
                     </div>
-                    <h3 data-i18n="serv_c_t">Colunas, Vigas e Lajes</h3>
-                    <p data-i18n="serv_c_p">Estruturas de betão armado projetadas para máxima durabilidade e longevidade estrutural em construções complexas.</p>
+                    <h3 data-i18n="serv_c_t">Columns, beams, and slabs</h3>
+                    <p data-i18n="serv_c_p">Structural concrete elements designed for maximum load-bearing capacity and durability.</p>
                 </div>
                 <div class="service-card reveal">
                     <div class="service-image-container">
-                        <img src="services-image/Masonry & Brickwork.jpeg" alt="Masonry" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="services-image/Masonry and brickwork.jpeg" alt="Masonry"
+                            style="width:100%; height:100%; object-fit:cover;">
                     </div>
-                    <h3 data-i18n="serv_m_t">Alvenaria e Tijolos</h3>
-                    <p data-i18n="serv_m_p">Trabalhos de tijolo e bloco de alta qualidade para estética residencial e soluções de divisórias robustas.</p>
+                    <h3 data-i18n="serv_m_t">Masonry and brickwork</h3>
+                    <p data-i18n="serv_m_p">High-quality brick and block work for robust and aesthetic wall solutions.</p>
                 </div>
             </div>
 
             <div style="text-align: center; margin-top: 5rem;" class="reveal">
-                <a href="services.html" class="btn btn-primary" data-i18n="explore_services">Explorar Todos os Serviços</a>
+                <a href="services.html" class="btn btn-primary" data-i18n="explore_services">Explorar Todos os
+                    Serviços</a>
             </div>
         </div>
     </section>
@@ -96,18 +102,31 @@
                 <div class="split-image">
                     <img src="worker.jpeg" alt="EXO Building Worker">
                     <div class="badge-float">
-                        <span style="font-size: 2.5rem; display: block; line-height: 1; margin-bottom: 0.5rem; font-family: var(--font-h); font-weight: 800;">15+</span>
-                        <span style="font-size: 0.8rem; text-transform: uppercase; font-weight: 600;">Anos de Experiência</span>
+                        <span
+                            style="font-size: 2.5rem; display: block; line-height: 1; margin-bottom: 0.5rem; font-family: var(--font-h); font-weight: 800;">15+</span>
+                        <span style="font-size: 0.8rem; text-transform: uppercase; font-weight: 600;" data-i18n="exp_years">Anos de Experiência</span>
                     </div>
                 </div>
                 <div class="split-content">
-                    <h2 data-i18n="about_home_title" style="font-size: 3rem; margin-bottom: 1.5rem;">Construindo o Futuro com Precisão.</h2>
-                    <p data-i18n="about_home_p1" style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 1.1rem;">Na EXO Building, combinamos inovação técnica com os mais altos padrões de qualidade. A nossa equipa de especialistas é dedicada a transformar visões arquitetónicas em realidade estrutural.</p>
-                    <p data-i18n="about_home_p2" style="color: var(--text-muted); margin-bottom: 2rem; font-size: 1.1rem;">Operamos em todo o território nacional e europeu, entregando projetos de luxo e infraestruturas complexas com eficiência e rigor inigualáveis.</p>
+                    <h2 data-i18n="about_home_title" style="font-size: 3rem; margin-bottom: 1.5rem;">Construindo o
+                        Futuro com Precisão.</h2>
+                    <p data-i18n="about_home_p1"
+                        style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 1.1rem;">Na EXO Building,
+                        combinamos inovação técnica with os mais altos padrões de qualidade. A nossa equipa de
+                        especialistas é dedicada a transformar visões arquitetónicas em realidade estrutural.</p>
+                    <p data-i18n="about_home_p2"
+                        style="color: var(--text-muted); margin-bottom: 2rem; font-size: 1.1rem;">Operamos em todo o
+                        território nacional and europeu, entregando projetos de luxo e infraestruturas complexas com
+                        eficiência e rigor inigualáveis.</p>
                     <ul style="list-style: none; margin-bottom: 2.5rem; color: var(--secondary); font-weight: 600;">
-                        <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: var(--primary); margin-right: 1rem;"></i> <span data-i18n="about_bullet_1">Engenharia de precisão</span></li>
-                        <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: var(--primary); margin-right: 1rem;"></i> <span data-i18n="about_bullet_2">Sustentabilidade e Inovação</span></li>
-                        <li><i class="fas fa-check-circle" style="color: var(--primary); margin-right: 1rem;"></i> <span data-i18n="about_bullet_3">Equipa Especializada</span></li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle"
+                                style="color: var(--primary); margin-right: 1rem;"></i> <span
+                                data-i18n="about_bullet_1">Engenharia de precisão</span></li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle"
+                                style="color: var(--primary); margin-right: 1rem;"></i> <span
+                                data-i18n="about_bullet_2">Sustentabilidade e Inovação</span></li>
+                        <li><i class="fas fa-check-circle" style="color: var(--primary); margin-right: 1rem;"></i> <span
+                                data-i18n="about_bullet_3">Equipa Especializada</span></li>
                     </ul>
                     <a href="about.html" class="btn btn-primary" data-i18n="btn_know_more">Saber Mais</a>
                 </div>
@@ -120,118 +139,35 @@
         <div class="container">
             <div class="card-section-header reveal">
                 <h2 data-i18n="section_projects_home">Projetos Emblemáticos Recentes</h2>
-                <p data-i18n="projects_home_subtitle">Uma seleção criteriosa das nossas reabilitações estruturais de alto nível e construções de luxo.</p>
+                <p data-i18n="projects_home_subtitle">Uma seleção criteriosa das nossas reabilitações estruturais de
+                    alto nível e construções de luxo.</p>
             </div>
 
             <div class="gallery-grid">
                 <a href="projects.html?filter=abrantes" class="project-card reveal">
                     <img src="abrantesastaiton4/img-1.JPG" alt="Estação de Abrantes 4">
-                    <div class="project-overlay"><h3 data-i18n="proj_abrantes">Estação de Abrantes 4</h3></div>
+                    <div class="project-overlay">
+                        <h3 data-i18n="proj_abrantes">Estação de Abrantes 4</h3>
+                    </div>
                 </a>
                 <a href="projects.html?filter=biscaia" class="project-card reveal">
                     <img src="Biscaia/img-1.jpg" alt="Villa Biscaia">
-                    <div class="project-overlay"><h3 data-i18n="proj_biscaia">Villa Biscaia</h3></div>
+                    <div class="project-overlay">
+                        <h3 data-i18n="proj_biscaia">Villa Biscaia</h3>
+                    </div>
                 </a>
                 <a href="projects.html?filter=monaco" class="project-card reveal">
                     <img src="Hotel-MONACO/img-1.jpeg" alt="Hotel Mónaco">
-                    <div class="project-overlay"><h3 data-i18n="proj_monaco">Hotel Mónaco</h3></div>
+                    <div class="project-overlay">
+                        <h3 data-i18n="proj_monaco">Hotel Mónaco</h3>
+                    </div>
                 </a>
                 <a href="projects.html?filter=santarem" class="project-card reveal santarem">
                     <img src="santarem/img-1.png" alt="Projeto Santarém">
-                    <div class="project-overlay"><h3 data-i18n="proj_santarem">Projeto de Santarém</h3></div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats-section" style="background: var(--secondary); color: var(--white); padding: 5rem 0;">
-        <div class="container">
-            <div class="stats-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; text-align: center;">
-                <div class="stat-item reveal">
-                    <h3 class="counter" data-target="150" style="font-size: 4rem; color: var(--primary); margin-bottom: 0.5rem; font-weight: 900; line-height: 1;">0</h3>
-                    <p style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; color: #94a3b8; margin: 0;" data-i18n="stat_projects">Projetos Concluídos</p>
-                </div>
-                <div class="stat-item reveal">
-                    <h3 class="counter" data-target="45" style="font-size: 4rem; color: var(--primary); margin-bottom: 0.5rem; font-weight: 900; line-height: 1;">0</h3>
-                    <p style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; color: #94a3b8; margin: 0;" data-i18n="stat_cities">Cidades</p>
-                </div>
-                <div class="stat-item reveal">
-                    <h3 class="counter" data-target="25" style="font-size: 4rem; color: var(--primary); margin-bottom: 0.5rem; font-weight: 900; line-height: 1;">0</h3>
-                    <p style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; color: #94a3b8; margin: 0;" data-i18n="stat_awards">Prémios</p>
-                </div>
-                <div class="stat-item reveal">
-                    <h3 class="counter" data-target="100" style="font-size: 4rem; color: var(--primary); margin-bottom: 0.5rem; font-weight: 900; line-height: 1;">0</h3>
-                    <p style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; color: #94a3b8; margin: 0;" data-i18n="stat_satisfaction">% Satisfação</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section" style="background: var(--accent);">
-        <div class="container">
-            <div class="split-section reveal">
-                <div class="contact-info" style="padding-right: 2rem;">
-                    <h2 data-i18n="contact_title" style="margin-bottom: 1.5rem; font-size: 3rem;">Vamos Falar Sobre o Seu Projeto.</h2>
-                    <p data-i18n="contact_subtitle" style="color: var(--text-muted); margin-bottom: 3rem; font-size: 1.1rem;">A nossa equipa está pronta para fornecer soluções de engenharia e construção à medida. Entre em contacto hoje mesmo.</p>
-                    
-                    <div style="display: flex; flex-direction: column; gap: 2rem;">
-                        <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
-                            <div style="width: 60px; height: 60px; background: var(--white); border-radius: 15px; display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 1.5rem; box-shadow: var(--shadow-sm); flex-shrink: 0; transition: var(--transition);">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <h4 style="margin-bottom: 0.5rem; color: var(--secondary); font-size: 1.2rem;">Localização</h4>
-                                <p style="color: var(--text-muted); font-size: 1rem;">Avenida da Liberdade 144, Lisboa, Portugal</p>
-                            </div>
-                        </div>
-                        <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
-                            <div style="width: 60px; height: 60px; background: var(--white); border-radius: 15px; display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 1.5rem; box-shadow: var(--shadow-sm); flex-shrink: 0; transition: var(--transition);">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div>
-                                <h4 style="margin-bottom: 0.5rem; color: var(--secondary); font-size: 1.2rem;">Email</h4>
-                                <p style="color: var(--text-muted); font-size: 1rem;">secretaria@exobuilding.pt</p>
-                            </div>
-                        </div>
-                        <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
-                            <div style="width: 60px; height: 60px; background: var(--white); border-radius: 15px; display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 1.5rem; box-shadow: var(--shadow-sm); flex-shrink: 0; transition: var(--transition);">
-                                <i class="fas fa-phone-alt"></i>
-                            </div>
-                            <div>
-                                <h4 style="margin-bottom: 0.5rem; color: var(--secondary); font-size: 1.2rem;">Telefone</h4>
-                                <p style="color: var(--text-muted); font-size: 1rem;">+351 918 445 810</p>
-                            </div>
-                        </div>
+                    <div class="project-overlay">
+                        <h3 data-i18n="proj_santarem">Projeto de Santarém</h3>
                     </div>
-                </div>
-                
-                <div class="contact-form-container" style="background: var(--white); padding: 4rem; border-radius: var(--radius); box-shadow: var(--shadow);">
-                    <form action="#" method="POST">
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
-                            <div class="form-group" style="margin-bottom: 0;">
-                                <input type="text" class="form-control" placeholder="Nome Completo" required>
-                            </div>
-                            <div class="form-group" style="margin-bottom: 0;">
-                                <input type="email" class="form-control" placeholder="Endereço de Email" required>
-                            </div>
-                        </div>
-                        <div class="form-group" style="margin-bottom: 1.5rem;">
-                            <select class="form-control" required>
-                                <option value="" disabled selected>Selecione um Serviço</option>
-                                <option value="Fundações e Escavações">Fundações e Escavações</option>
-                                <option value="Colunas, Vigas e Lajes">Colunas, Vigas e Lajes</option>
-                                <option value="Alvenaria e Tijolos">Alvenaria e Tijolos</option>
-                                <option value="Consultoria Técnica">Consultoria Técnica</option>
-                            </select>
-                        </div>
-                        <div class="form-group" style="margin-bottom: 2rem;">
-                            <textarea class="form-control" placeholder="Detalhes do Projeto" rows="5" required style="resize: vertical;"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Pedido</button>
-                    </form>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -242,14 +178,16 @@
                 <!-- Col 1: Brand -->
                 <div class="footer-brand">
                     <img src="logo2.png" alt="EXO Building" class="footer-logo">
-                    <p data-i18n="footer_brand">Construção de vanguarda e consultoria técnica em Portugal e no resto da Europa.</p>
+                    <p data-i18n="footer_brand">Construção de vanguarda e consultoria técnica em Portugal e no resto da
+                        Europa.</p>
                     <div class="social-icons">
                         <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.instagram.com/exobuilding/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/exobuilding/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
                         <a href="https://wa.me/351918445810" target="_blank"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-                
+
                 <!-- Col 2: Navigation -->
                 <div class="footer-col">
                     <h4 data-i18n="f_nav">Navegação</h4>
@@ -276,26 +214,39 @@
                 <!-- Col 4: Contact & Map -->
                 <div class="footer-col">
                     <h4 data-i18n="nav_contact">Contacto</h4>
-                    <p style="margin-bottom: 0.5rem;"><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i> Avenida da Liberdade 144, Lisbon</p>
+                    <p style="margin-bottom: 0.5rem;"><i class="fas fa-map-marker-alt"
+                            style="color: var(--primary); margin-right: 10px;"></i> <span data-i18n="address_text">Avenida da Liberdade, Nº 144, 2 Dtº,
+                        1250-146, Lisbon, Portugal.</span></p>
                     <p style="margin-bottom: 0.5rem;"><i class="fas fa-phone-alt" style="color: var(--primary); margin-right: 10px;"></i> <a href="tel:+351918445810" style="color: inherit; text-decoration: none;">+351 918 445 810</a></p>
-                    <p><i class="fas fa-envelope" style="color: var(--primary); margin-right: 10px;"></i> <a href="mailto:secretaria@exobuilding.pt" style="color: inherit; text-decoration: none;">secretaria@exobuilding.pt</a></p>
-                    
+                    <p><i class="fas fa-envelope" style="color: var(--primary); margin-right: 10px;"></i> <a
+                            href="mailto:secretaria@exobuilding.pt"
+                            style="color: inherit; text-decoration: none;">secretaria@exobuilding.pt</a></p>
+
                     <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.3444738569424!2d-9.14660852342938!3d38.72141527176241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1933777d967f3f%3A0xb35a39665679e099!2sAv.%20da%20Liberdade%20144%2C%201250-146%20Lisboa!5e0!3m2!1sen!2spt!4v1713697943567!5m2!1sen!2spt" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.3444738569424!2d-9.14660852342938!3d38.72141527176241!2m3!1f0!2f0!3f0!3m2!i1024!2i768!4f13.1!3m3!1m2!1s0xd1933777d967f3f%3A0xb35a39665679e099!2sAv.%20da%20Liberdade%20144%2C%201250-146%20Lisboa!5e0!3m2!1sen!2spt!4v1713697943567!5m2!1sen!2spt"
+                            allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p data-i18n="copyright">© 2022 EXO Building. Todos os direitos reservados.</p>
                 <div style="display: flex; gap: 2rem;">
-                    <a href="#" style="color: inherit; text-decoration: none;" data-i18n="privacy">Política de Privacidade</a>
+                    <a href="#" style="color: inherit; text-decoration: none;" data-i18n="privacy">Política de
+                        Privacidade</a>
                     <a href="#" style="color: inherit; text-decoration: none;" data-i18n="terms">Termos de Serviço</a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <img src="" alt="" class="lightbox-content" id="lightbox-img">
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
