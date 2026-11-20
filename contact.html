@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
     <header>
@@ -22,7 +24,8 @@
                     <li><a href="contact.html" class="nav-link active" data-i18n="nav_contact">Contacto</a></li>
                 </ul>
                 <div class="lang-switcher">
-                    <button class="lang-btn"><i class="fas fa-globe"></i> <span data-i18n="lang_label">Idioma</span> <i class="fas fa-chevron-down" style="font-size: 0.6rem; opacity: 0.6;"></i></button>
+                    <button class="lang-btn"><i class="fas fa-globe"></i> <span data-i18n="lang_label">Idioma</span> <i
+                            class="fas fa-chevron-down" style="font-size: 0.6rem; opacity: 0.6;"></i></button>
                     <div class="lang-dropdown">
                         <span class="lang-option" onclick="changeLanguage('pt')">Português</span>
                         <span class="lang-option" onclick="changeLanguage('en')">English</span>
@@ -32,72 +35,127 @@
         </div>
     </header>
 
-    <section style="position: relative; margin-top: 85px; padding: 200px 0; min-height: 600px; aspect-ratio: 21 / 9; background: var(--secondary); color: white; overflow: hidden; display: flex; align-items: center;">
-        <!-- Background Image Aligned to Top -->
-        <div style="position: absolute; inset: 0; background: url('CONTACTPAGEBACK.jpeg'); background-size: cover; background-position: center top; z-index: 0;"></div>
-        
-        <div class="container" style="position: relative; z-index: 1;">
-            <div class="reveal" style="max-width: 850px; background: rgba(255, 255, 255, 0.4); padding: 4rem; border-radius: 30px; backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.3); box-shadow: 0 30px 60px rgba(0,0,0,0.1);">
-                <h1 style="color: #000000; font-size: clamp(3.5rem, 8vw, 5rem); line-height: 1; margin-bottom: 2.5rem; text-shadow: none; font-weight: 900; letter-spacing: -0.03em;" data-i18n="contact_title">Entre em Contacto</h1>
-                <p style="color: #333333; font-size: 1.4rem; max-width: 700px; line-height: 1.6; text-shadow: none; margin-bottom: 2.5rem;" data-i18n="contact_subtitle">Contacte a nossa equipa para consultoria técnica ou consultas de projetos. Lideramos empreendimentos de construção complexos em Portugal e na Europa.</p>
-                
-                <div class="contact-header-socials" style="display: flex; gap: 2.5rem;">
-                    <a href="https://wa.me/351918445810" target="_blank" style="color: #25D366; font-size: 3rem; transition: 0.3s; filter: drop-shadow(0 4px 15px rgba(37, 211, 102, 0.5));" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.instagram.com/exobuilding/" target="_blank" style="color: #FF2D55; font-size: 3rem; transition: 0.3s; filter: drop-shadow(0 4px 15px rgba(255, 45, 85, 0.5));" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'"><i class="fab fa-instagram"></i></a>
-                    <a href="#" target="_blank" style="color: #00A0DC; font-size: 3rem; transition: 0.3s; filter: drop-shadow(0 4px 15px rgba(0, 160, 220, 0.5));" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'"><i class="fab fa-linkedin"></i></a>
+    <!-- Contact Luxury Hero Section -->
+    <section class="contact-hero-section">
+        <!-- Background Image with Brand Gradient -->
+        <div class="contact-hero-bg"></div>
+        <div class="contact-hero-blueprint"></div>
+        <div class="contact-hero-tech-glow"></div>
+
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="reveal contact-hero-card">
+                <div>
+                    <span class="contact-hero-badge">
+                        <i class="fas fa-headset"></i> <span data-i18n="contact_hero_badge">Canais Diretos de
+                            Comunicação</span>
+                    </span>
+                </div>
+                <h1 class="contact-hero-title" data-i18n="contact_title">
+                    Entre em Contacto
+                </h1>
+                <p class="contact-hero-desc" data-i18n="contact_subtitle">
+                    Contacte a nossa equipa para consultoria técnica ou consultas de projetos. Lideramos empreendimentos
+                    de construção complexos em Portugal e na Europa.
+                </p>
+
+                <div class="contact-hero-actions">
+                    <a href="https://wa.me/351918445810" target="_blank" rel="noopener noreferrer"
+                        class="contact-btn-wa">
+                        <i class="fab fa-whatsapp" style="font-size: 1.3rem;"></i> <span>WhatsApp</span>
+                    </a>
+                    <a href="tel:+351918445810" class="contact-btn-call">
+                        <i class="fas fa-phone-alt"></i> <span>Ligar (+351 918 445 810)</span>
+                    </a>
+                    <a href="mailto:secretaria@exobuilding.pt" class="contact-btn-mail">
+                        <i class="fas fa-envelope"></i> <span>secretaria@exobuilding.pt</span>
+                    </a>
+                </div>
+
+                <div class="contact-hero-trust">
+                    <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="trust_office">Lisboa,
+                            Portugal</span></span>
+                    <span><i class="fas fa-bolt"></i> <span data-i18n="trust_response">Resposta Rápida &lt;
+                            24h</span></span>
+                    <span><i class="fas fa-certificate"></i> <span data-i18n="trust_consult">Consultoria &amp;
+                            Orçamentos Técnicos</span></span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section style="position: relative; padding: 10rem 0; overflow: hidden;">
-        <!-- Background Image with Overlay -->
-        <div style="position: absolute; inset: 0; background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('CONTACTPAGEBACK.jpeg'); background-size: cover; background-position: center; z-index: 0;"></div>
-        
+    <!-- Contact Form & Office Section -->
+    <section style="position: relative; padding: 7rem 0 9rem; background: var(--accent-light);">
         <div class="container" style="position: relative; z-index: 1;">
             <div class="split-section" style="gap: 4rem;">
                 <!-- Contact Info with Golden Border -->
-                <div class="reveal" style="background: rgba(255,255,255,0.8); padding: 3rem; border: 2px solid var(--primary); border-radius: 20px; backdrop-filter: blur(10px); box-shadow: var(--shadow);">
-                    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;" data-i18n="office_title">Escritório de Lisboa</h2>
-                    <p style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 2rem;" data-i18n="address_text">
+                <div class="reveal"
+                    style="background: rgba(255,255,255,0.8); padding: 3rem; border: 2px solid var(--primary); border-radius: 20px; backdrop-filter: blur(10px); box-shadow: var(--shadow);">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;" data-i18n="office_title">Escritório de Lisboa
+                    </h2>
+                    <p style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 2rem;"
+                        data-i18n="address_text">
                         Avenida da Liberdade, Nº 144, 2 Dtº, 1250-146, Lisbon, Portugal.
                     </p>
                     <p style="font-weight: 700; font-size: 1.5rem; color: var(--primary); margin-bottom: 1rem;">
-                        +351 918 445 810
+                        <a href="tel:+351918445810"
+                            style="color: inherit; text-decoration: none; display: inline-flex; align-items: center; gap: 0.6rem;"><i
+                                class="fas fa-phone-alt"></i> +351 918 445 810</a>
                     </p>
                     <p style="font-size: 1.1rem; color: var(--secondary); margin-bottom: 3rem;">
-                        Secretaria@exobuilding.pt
+                        <a href="mailto:secretaria@exobuilding.pt"
+                            style="color: inherit; text-decoration: none; display: inline-flex; align-items: center; gap: 0.6rem;"><i
+                                class="fas fa-envelope" style="color: var(--primary);"></i>
+                            secretaria@exobuilding.pt</a>
                     </p>
-                    <div style="display: flex; gap: 1.5rem;">
-                        <a href="https://wa.me/351918445810" target="_blank" class="btn btn-primary"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+                        <a href="https://wa.me/351918445810" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.6rem;"><i
+                                class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> WhatsApp</a>
+                        <a href="tel:+351918445810" class="btn btn-outline"
+                            style="border: 2px solid var(--secondary); color: var(--secondary); display: inline-flex; align-items: center; gap: 0.6rem;"><i
+                                class="fas fa-phone-alt"></i> Ligar</a>
                     </div>
                 </div>
 
                 <!-- Form with Golden Border -->
-                <div class="reveal" style="background: rgba(255,255,255,0.8); padding: 3rem; border: 2px solid var(--primary); border-radius: 20px; backdrop-filter: blur(10px); box-shadow: var(--shadow);">
+                <div class="reveal"
+                    style="background: rgba(255,255,255,0.8); padding: 3rem; border: 2px solid var(--primary); border-radius: 20px; backdrop-filter: blur(10px); box-shadow: var(--shadow);">
                     <!-- Mensagens de Sucesso/Erro -->
-                    <div data-fs-success style="display: none; text-align: center; padding: 2rem; background: rgba(197, 160, 68, 0.1); border-radius: 8px; border: 1px solid var(--primary); margin-bottom: 2rem;">
-                        <i class="fas fa-check-circle" style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;"></i>
-                        <h3 style="color: var(--secondary);" data-i18n="form_success_t">Mensagem Enviada com Sucesso!</h3>
-                        <p style="color: var(--text-muted);" data-i18n="form_success_p">Obrigado por contactar a EXO Building. Entraremos em contacto brevemente.</p>
+                    <div data-fs-success
+                        style="display: none; text-align: center; padding: 2rem; background: rgba(166, 83, 48, 0.1); border-radius: 8px; border: 1px solid var(--primary); margin-bottom: 2rem;">
+                        <i class="fas fa-check-circle"
+                            style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                        <h3 style="color: var(--secondary);" data-i18n="form_success_t">Mensagem Enviada com Sucesso!
+                        </h3>
+                        <p style="color: var(--text-muted);" data-i18n="form_success_p">Obrigado por contactar a EXO
+                            Building. Entraremos em contacto brevemente.</p>
                     </div>
-                    <div data-fs-error style="display: none; text-align: center; padding: 1rem; background: #fee2e2; color: #991b1b; border-radius: 8px; margin-bottom: 2rem;"></div>
+                    <div data-fs-error
+                        style="display: none; text-align: center; padding: 1rem; background: #fee2e2; color: #991b1b; border-radius: 8px; margin-bottom: 2rem;">
+                    </div>
 
                     <form id="my-form" class="contact-form">
                         <div class="form-group">
                             <label for="name" data-i18n="form_name">Nome Completo</label>
-                            <input type="text" id="name" name="name" class="form-control" placeholder="João Silva" required data-fs-field data-i18n-placeholder="form_name_p">
-                            <span data-fs-error="name" style="color: #dc2626; font-size: 0.8rem; margin-top: 5px; display: block;"></span>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="João Silva"
+                                required data-fs-field data-i18n-placeholder="form_name_p">
+                            <span data-fs-error="name"
+                                style="color: #dc2626; font-size: 0.8rem; margin-top: 5px; display: block;"></span>
                         </div>
                         <div class="form-group">
                             <label for="email" data-i18n="form_email">Endereço de Email</label>
-                            <input type="email" id="email" name="email" class="form-control" placeholder="joao@exemplo.pt" required data-fs-field data-i18n-placeholder="form_email_p">
-                            <span data-fs-error="email" style="color: #dc2626; font-size: 0.8rem; margin-top: 5px; display: block;"></span>
+                            <input type="email" id="email" name="email" class="form-control"
+                                placeholder="joao@exemplo.pt" required data-fs-field
+                                data-i18n-placeholder="form_email_p">
+                            <span data-fs-error="email"
+                                style="color: #dc2626; font-size: 0.8rem; margin-top: 5px; display: block;"></span>
                         </div>
                         <div class="form-group">
                             <label for="service" data-i18n="form_service">Serviço Requerido</label>
-                            <select id="service" name="service" class="form-control" required data-fs-field data-i18n-select="form_serv">
-                                <option value="" disabled selected data-i18n="form_serv_placeholder">Selecione um Serviço</option>
+                            <select id="service" name="service" class="form-control" required data-fs-field
+                                data-i18n-select="form_serv">
+                                <option value="" disabled selected data-i18n="form_serv_placeholder">Selecione um
+                                    Serviço</option>
                                 <option value="Metal Framing">Sistemas de Estrutura Metálica e Pladur</option>
                                 <option value="Concrete">Colunas, Vigas e Lajes</option>
                                 <option value="Masonry">Alvenaria e Tijolos</option>
@@ -112,14 +170,19 @@
                                 <option value="Plumbing">Canalização e Pichelaria</option>
                                 <option value="Insulation">Isolamento Exterior (ETICS)</option>
                             </select>
-                            <span data-fs-error="service" style="color: #dc2626; font-size: 0.8rem; margin-top: 5px; display: block;"></span>
+                            <span data-fs-error="service"
+                                style="color: #dc2626; font-size: 0.8rem; margin-top: 5px; display: block;"></span>
                         </div>
                         <div class="form-group">
                             <label for="message" data-i18n="form_message">Detalhes do Projeto</label>
-                            <textarea id="message" name="message" class="form-control" placeholder="Conte-nos sobre os requisitos do seu projeto..." required data-fs-field data-i18n-placeholder="form_msg_p"></textarea>
-                            <span data-fs-error="message" style="color: #dc2626; font-size: 0.8rem; margin-top: 5px; display: block;"></span>
+                            <textarea id="message" name="message" class="form-control"
+                                placeholder="Conte-nos sobre os requisitos do seu projeto..." required data-fs-field
+                                data-i18n-placeholder="form_msg_p"></textarea>
+                            <span data-fs-error="message"
+                                style="color: #dc2626; font-size: 0.8rem; margin-top: 5px; display: block;"></span>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;" data-fs-submit-btn data-i18n="form_submit">Enviar Pedido</button>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;" data-fs-submit-btn
+                            data-i18n="form_submit">Enviar Pedido</button>
                     </form>
                 </div>
             </div>
@@ -129,10 +192,10 @@
     <!-- Formspree Integration -->
     <script>
         window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
-        formspree('initForm', { 
-            formElement: '#my-form', 
+        formspree('initForm', {
+            formElement: '#my-form',
             formId: 'myklprzb',
-            onSuccess: function() {
+            onSuccess: function () {
                 document.getElementById('my-form').style.display = 'none';
                 document.querySelector('[data-fs-success]').style.display = 'block';
             }
@@ -146,14 +209,18 @@
                 <!-- Col 1: Brand -->
                 <div class="footer-brand">
                     <img src="logo2.png" alt="EXO Building" class="footer-logo">
-                    <p data-i18n="footer_brand">Construção de vanguarda e consultoria técnica em Portugal e no resto da Europa.</p>
+                    <p data-i18n="footer_brand">Construção de vanguarda e consultoria técnica em Portugal e no resto da
+                        Europa.</p>
                     <div class="social-icons">
-                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.instagram.com/exobuilding/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/351918445810" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://wa.me/351918445810" target="_blank" rel="noopener noreferrer" title="WhatsApp"
+                            aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+351918445810" title="Telefone / Call" aria-label="Telefone"><i
+                                class="fas fa-phone-alt"></i></a>
+                        <a href="mailto:secretaria@exobuilding.pt" title="Email" aria-label="Email"><i
+                                class="fas fa-envelope"></i></a>
                     </div>
                 </div>
-                
+
                 <!-- Col 2: Navigation -->
                 <div class="footer-col">
                     <h4 data-i18n="f_nav">Navegação</h4>
@@ -180,20 +247,30 @@
                 <!-- Col 4: Contact & Map -->
                 <div class="footer-col">
                     <h4 data-i18n="nav_contact">Contacto</h4>
-                    <p style="margin-bottom: 0.5rem;"><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i> <span data-i18n="address_text">Avenida da Liberdade, Nº 144, 2 Dtº, 1250-146, Lisbon, Portugal.</span></p>
-                    <p style="margin-bottom: 0.5rem;"><i class="fas fa-phone-alt" style="color: var(--primary); margin-right: 10px;"></i> <a href="tel:+351918445810" style="color: inherit; text-decoration: none;">+351 918 445 810</a></p>
-                    <p><i class="fas fa-envelope" style="color: var(--primary); margin-right: 10px;"></i> <a href="mailto:secretaria@exobuilding.pt" style="color: inherit; text-decoration: none;">secretaria@exobuilding.pt</a></p>
-                    
+                    <p style="margin-bottom: 0.5rem;"><i class="fas fa-map-marker-alt"
+                            style="color: var(--primary); margin-right: 10px;"></i> <span
+                            data-i18n="address_text">Avenida da Liberdade, Nº 144, 2 Dtº, 1250-146, Lisbon,
+                            Portugal.</span></p>
+                    <p style="margin-bottom: 0.5rem;"><i class="fas fa-phone-alt"
+                            style="color: var(--primary); margin-right: 10px;"></i> <a href="tel:+351918445810"
+                            style="color: inherit; text-decoration: none;">+351 918 445 810</a></p>
+                    <p><i class="fas fa-envelope" style="color: var(--primary); margin-right: 10px;"></i> <a
+                            href="mailto:secretaria@exobuilding.pt"
+                            style="color: inherit; text-decoration: none;">secretaria@exobuilding.pt</a></p>
+
                     <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.3444738569424!2d-9.14660852342938!3d38.72141527176241!2m3!1f0!2f0!3f0!3m2!i1024!2i768!4f13.1!3m3!1m2!1s0xd1933777d967f3f%3A0xb35a39665679e099!2sAv.%20da%20Liberdade%20144%2C%201250-146%20Lisboa!5e0!3m2!1sen!2spt!4v1713697943567!5m2!1sen!2spt" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.3444738569424!2d-9.14660852342938!3d38.72141527176241!2m3!1f0!2f0!3f0!3m2!i1024!2i768!4f13.1!3m3!1m2!1s0xd1933777d967f3f%3A0xb35a39665679e099!2sAv.%20da%20Liberdade%20144%2C%201250-146%20Lisboa!5e0!3m2!1sen!2spt!4v1713697943567!5m2!1sen!2spt"
+                            allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p data-i18n="copyright">© 2022 EXO Building. Todos os direitos reservados.</p>
                 <div style="display: flex; gap: 2rem;">
-                    <a href="#" style="color: inherit; text-decoration: none;" data-i18n="privacy">Política de Privacidade</a>
+                    <a href="#" style="color: inherit; text-decoration: none;" data-i18n="privacy">Política de
+                        Privacidade</a>
                     <a href="#" style="color: inherit; text-decoration: none;" data-i18n="terms">Termos de Serviço</a>
                 </div>
             </div>
@@ -205,6 +282,13 @@
         <img src="" alt="" class="lightbox-content" id="lightbox-img">
     </div>
 
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/351918445810" target="_blank" rel="noopener noreferrer" class="floating-whatsapp"
+        title="WhatsApp Chat" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <script src="script.js"></script>
 </body>
+
 </html>

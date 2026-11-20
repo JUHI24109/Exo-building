@@ -34,7 +34,7 @@
 
     <section style="position: relative; margin-top: 85px; padding: 200px 0; min-height: 600px; aspect-ratio: 21 / 9; background: var(--secondary); color: white; overflow: hidden; display: flex; align-items: center;">
         <!-- Background Image Aligned to Top -->
-        <div class="projects-hero-bg" style="position: absolute; inset: 0; background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.4)), url('abrantesastaiton4/img-1.JPG'); background-size: cover; background-position: center top; z-index: 0;"></div>
+        <div class="projects-hero-bg" style="position: absolute; inset: 0; background: linear-gradient(rgba(24, 32, 61, 0.75), rgba(24, 32, 61, 0.4)), url('abrantesastaiton4/img-1.JPG'); background-size: cover; background-position: center top; z-index: 0;"></div>
         
         <div class="container" style="position: relative; z-index: 1;">
             <div class="reveal" style="max-width: 800px;">
@@ -47,9 +47,11 @@
     <section>
         <div class="container">
             <div class="filter-bar reveal">
-                <button class="filter-btn active" data-filter="abrantes" data-i18n="proj_abrantes">Estação de Abrantes 4</button>
+                <button class="filter-btn active" data-filter="all" data-i18n="filter_all">Todos os Projetos</button>
+                <button class="filter-btn" data-filter="abrantes" data-i18n="proj_abrantes">Estação de Abrantes 4</button>
                 <button class="filter-btn" data-filter="biscaia" data-i18n="proj_biscaia">Villa Biscaia</button>
                 <button class="filter-btn" data-filter="monaco" data-i18n="proj_monaco">Hotel Mónaco</button>
+                <button class="filter-btn" data-filter="condeixa" data-i18n="proj_condeixa">Projeto de Condeixa</button>
                 <button class="filter-btn" data-filter="santarem" data-i18n="proj_santarem">Projeto de Santarém</button>
             </div>
 
@@ -67,9 +69,9 @@
                     <img src="logo2.png" alt="EXO Building" class="footer-logo">
                     <p data-i18n="footer_brand">Construção de vanguarda e consultoria técnica em Portugal e no resto da Europa.</p>
                     <div class="social-icons">
-                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.instagram.com/exobuilding/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/351918445810" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://wa.me/351918445810" target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+351918445810" title="Telefone / Call" aria-label="Telefone"><i class="fas fa-phone-alt"></i></a>
+                        <a href="mailto:secretaria@exobuilding.pt" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 
@@ -124,6 +126,11 @@
         <span class="lightbox-close" id="lightbox-close">&times;</span>
         <img src="" alt="" class="lightbox-content" id="lightbox-img">
     </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/351918445810" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" title="WhatsApp Chat" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <script src="script.js"></script>
 </body>

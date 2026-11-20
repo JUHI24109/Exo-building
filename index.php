@@ -62,29 +62,56 @@
             </div>
 
             <div class="service-grid">
-                <div class="service-card reveal">
+                <div class="service-card reveal" data-service="mf">
                     <div class="service-image-container">
-                        <img src="services-image/Metal framing and plasterboard systems.jpeg" alt="Metal Framing"
-                            style="width:100%; height:100%; object-fit:cover;">
+                        <img src="services-image/Metal framing and plasterboard systems.jpeg" alt="Metal Framing" loading="lazy">
+                        <div class="service-badge"><i class="fas fa-border-all"></i> <span data-i18n="s_tag_1">01. Estrutura</span></div>
+                        <div class="service-card-expand-icon"><i class="fas fa-expand-arrows-alt"></i></div>
                     </div>
-                    <h3 data-i18n="serv_mf_t">Metal framing and plasterboard systems</h3>
-                    <p data-i18n="serv_mf_p">Precision installation of metal structures and plasterboard for modern interior partitions.</p>
+                    <div class="service-content">
+                        <div>
+                            <h3 data-i18n="serv_mf_t">Metal framing and plasterboard systems</h3>
+                            <p data-i18n="serv_mf_p">Precision installation of metal structures and plasterboard for modern interior partitions.</p>
+                        </div>
+                        <a href="services.html" class="service-card-action">
+                            <span data-i18n="btn_know_more">Saber Mais</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="service-card reveal">
+                <div class="service-card reveal" data-service="c">
                     <div class="service-image-container">
-                        <img src="services-image/Columns, beams, and slabs.jpeg" alt="Concrete"
-                            style="width:100%; height:100%; object-fit:cover;">
+                        <img src="services-image/Columns, beams, and slabs.jpeg" alt="Concrete" loading="lazy">
+                        <div class="service-badge"><i class="fas fa-monument"></i> <span data-i18n="s_tag_2">02. Elementos</span></div>
+                        <div class="service-card-expand-icon"><i class="fas fa-expand-arrows-alt"></i></div>
                     </div>
-                    <h3 data-i18n="serv_c_t">Columns, beams, and slabs</h3>
-                    <p data-i18n="serv_c_p">Structural concrete elements designed for maximum load-bearing capacity and durability.</p>
+                    <div class="service-content">
+                        <div>
+                            <h3 data-i18n="serv_c_t">Columns, beams, and slabs</h3>
+                            <p data-i18n="serv_c_p">Structural concrete elements designed for maximum load-bearing capacity and durability.</p>
+                        </div>
+                        <a href="services.html" class="service-card-action">
+                            <span data-i18n="btn_know_more">Saber Mais</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="service-card reveal">
+                <div class="service-card reveal" data-service="m">
                     <div class="service-image-container">
-                        <img src="services-image/Masonry and brickwork.jpeg" alt="Masonry"
-                            style="width:100%; height:100%; object-fit:cover;">
+                        <img src="services-image/Masonry and brickwork.jpeg" alt="Masonry" loading="lazy">
+                        <div class="service-badge"><i class="fas fa-th-large"></i> <span data-i18n="s_tag_3">03. Alvenarias</span></div>
+                        <div class="service-card-expand-icon"><i class="fas fa-expand-arrows-alt"></i></div>
                     </div>
-                    <h3 data-i18n="serv_m_t">Masonry and brickwork</h3>
-                    <p data-i18n="serv_m_p">High-quality brick and block work for robust and aesthetic wall solutions.</p>
+                    <div class="service-content">
+                        <div>
+                            <h3 data-i18n="serv_m_t">Masonry and brickwork</h3>
+                            <p data-i18n="serv_m_p">High-quality brick and block work for robust and aesthetic wall solutions.</p>
+                        </div>
+                        <a href="services.html" class="service-card-action">
+                            <span data-i18n="btn_know_more">Saber Mais</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -135,39 +162,58 @@
     </section>
 
     <!-- Featured Projects -->
-    <section style="background: var(--accent);">
+    <section style="background: var(--accent); padding: 8rem 0;">
         <div class="container">
-            <div class="card-section-header reveal">
-                <h2 data-i18n="section_projects_home">Projetos Emblemáticos Recentes</h2>
-                <p data-i18n="projects_home_subtitle">Uma seleção criteriosa das nossas reabilitações estruturais de
-                    alto nível e construções de luxo.</p>
+            <div class="card-section-header reveal" style="text-align: center; max-width: 850px; margin: 0 auto 4.5rem;">
+                <span style="color: var(--primary); font-size: 0.85rem; font-weight: 800; letter-spacing: 0.25em; text-transform: uppercase; display: block; margin-bottom: 0.8rem;">Excelência Construtiva</span>
+                <h2 data-i18n="section_projects_home" style="font-size: 3.2rem; margin-bottom: 1.2rem; color: var(--secondary);">Projetos Emblemáticos Recentes</h2>
+                <p data-i18n="projects_home_subtitle" style="color: var(--text-muted); font-size: 1.2rem; line-height: 1.7;">Uma seleção criteriosa das nossas reabilitações estruturais de alto nível e construções de luxo.</p>
             </div>
 
             <div class="gallery-grid">
+                <!-- 1: Abrantes -->
                 <a href="projects.html?filter=abrantes" class="project-card reveal">
                     <img src="abrantesastaiton4/img-1.JPG" alt="Estação de Abrantes 4">
                     <div class="project-overlay">
                         <h3 data-i18n="proj_abrantes">Estação de Abrantes 4</h3>
                     </div>
                 </a>
+
+                <!-- 2: Biscaia -->
                 <a href="projects.html?filter=biscaia" class="project-card reveal">
                     <img src="Biscaia/img-1.jpg" alt="Villa Biscaia">
                     <div class="project-overlay">
                         <h3 data-i18n="proj_biscaia">Villa Biscaia</h3>
                     </div>
                 </a>
+
+                <!-- 3: Monaco -->
                 <a href="projects.html?filter=monaco" class="project-card reveal">
                     <img src="Hotel-MONACO/img-1.jpeg" alt="Hotel Mónaco">
                     <div class="project-overlay">
                         <h3 data-i18n="proj_monaco">Hotel Mónaco</h3>
                     </div>
                 </a>
+
+                <!-- 4: Condeixa -->
+                <a href="projects.html?filter=condeixa" class="project-card reveal">
+                    <img src="condeixa/4.jpeg" alt="Projeto de Condeixa">
+                    <div class="project-overlay">
+                        <h3 data-i18n="proj_condeixa">Projeto de Condeixa</h3>
+                    </div>
+                </a>
+
+                <!-- 5: Santarem -->
                 <a href="projects.html?filter=santarem" class="project-card reveal santarem">
                     <img src="santarem/img-1.png" alt="Projeto Santarém">
                     <div class="project-overlay">
                         <h3 data-i18n="proj_santarem">Projeto de Santarém</h3>
                     </div>
                 </a>
+            </div>
+
+            <div style="text-align: center; margin-top: 4.5rem;" class="reveal">
+                <a href="projects.html" class="btn btn-primary"><i class="fas fa-th-large" style="margin-right: 0.6rem;"></i> <span data-i18n="view_all_projects">Ver Todos os Projetos</span></a>
             </div>
         </div>
     </section>
@@ -181,10 +227,9 @@
                     <p data-i18n="footer_brand">Construção de vanguarda e consultoria técnica em Portugal e no resto da
                         Europa.</p>
                     <div class="social-icons">
-                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.instagram.com/exobuilding/" target="_blank"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/351918445810" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://wa.me/351918445810" target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+351918445810" title="Telefone / Call" aria-label="Telefone"><i class="fas fa-phone-alt"></i></a>
+                        <a href="mailto:secretaria@exobuilding.pt" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
 
@@ -241,10 +286,48 @@
         </div>
     </footer>
 
+    <!-- Service Detail Modal (Enlarged Card & Full Description) -->
+    <div id="service-modal" class="service-modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="service-modal-dialog">
+            <button class="service-modal-close" id="service-modal-close" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="service-modal-image-col">
+                <img id="service-modal-img" src="" alt="Service Photo">
+            </div>
+            <div class="service-modal-content-col">
+                <div>
+                    <div class="service-modal-badge" id="service-modal-badge">
+                        <i class="fas fa-tools"></i> <span>01. Estrutura</span>
+                    </div>
+                    <h2 class="service-modal-title" id="service-modal-title">Service Title</h2>
+                    <p class="service-modal-desc" id="service-modal-desc">Service Description</p>
+                    <div class="service-modal-features-title" data-i18n="serv_spec_title">Especificações & Garantia Técnica</div>
+                    <ul class="service-modal-features" id="service-modal-features">
+                        <!-- Dynamic list items -->
+                    </ul>
+                </div>
+                <div class="service-modal-actions">
+                    <a href="contact.html" class="service-modal-btn-primary" id="service-modal-quote-btn">
+                        <i class="fas fa-paper-plane"></i> <span data-i18n="quote_btn">Pedir Orçamento</span>
+                    </a>
+                    <a href="https://wa.me/351918445810" target="_blank" rel="noopener noreferrer" class="service-modal-btn-wa">
+                        <i class="fab fa-whatsapp"></i> <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="lightbox" id="lightbox">
         <span class="lightbox-close" id="lightbox-close">&times;</span>
         <img src="" alt="" class="lightbox-content" id="lightbox-img">
     </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/351918445810" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" title="WhatsApp Chat" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <script src="script.js"></script>
 </body>

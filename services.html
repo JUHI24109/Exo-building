@@ -32,169 +32,336 @@
         </div>
     </header>
 
-    <section style="position: relative; margin-top: 85px; padding: 200px 0; min-height: 600px; aspect-ratio: 21 / 9; background: var(--secondary); color: white; overflow: hidden; display: flex; align-items: center;">
-        <!-- Background Image Aligned to Top -->
-        <div style="position: absolute; inset: 0; background: linear-gradient(to right, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.3)), url('servicesbackground.jpeg'); background-size: cover; background-position: center top; z-index: 0;"></div>
+    <!-- Services Technical Hero Section -->
+    <section class="services-hero-section">
+        <!-- Background Image with Theme Gradient Overlay -->
+        <div class="services-hero-bg" id="services-hero-bg"></div>
+        <div class="services-hero-blueprint"></div>
+        <div class="services-hero-tech-glow"></div>
         
-        <div class="container" style="position: relative; z-index: 1;">
-            <div class="reveal" style="max-width: 800px;">
-                <h1 style="color: var(--white); font-size: clamp(3.5rem, 8vw, 5rem); line-height: 1; margin-bottom: 2.5rem; text-shadow: 0 10px 30px rgba(0,0,0,0.5); font-weight: 900; letter-spacing: -0.03em;" data-i18n="section_services">Especialização Técnica</h1>
-                <p style="color: #f8fafc; font-size: 1.4rem; max-width: 650px; line-height: 1.6; text-shadow: 0 2px 10px rgba(0,0,0,0.3);" data-i18n="services_subtitle">Soluções estruturais de alto nível para projetos residenciais e comerciais de luxo em todo o Portugal.</p>
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="reveal" style="max-width: 880px;">
+                <div>
+                    <span class="services-hero-badge">
+                        <i class="fas fa-drafting-compass"></i> <span data-i18n="serv_hero_badge">Engenharia & Construção Civil</span>
+                    </span>
+                </div>
+                <h1 class="services-hero-title" data-i18n="section_services">
+                    Especialização Técnica
+                </h1>
+                <p class="services-hero-desc" data-i18n="services_subtitle">
+                    Soluções estruturais de alto nível para projetos residenciais e comerciais de luxo em todo o Portugal e Europa.
+                </p>
+                
+                <!-- Quick Capability Tags -->
+                <div class="services-hero-cap-container">
+                    <div class="services-hero-cap-pill">
+                        <i class="fas fa-layer-group"></i> <span data-i18n="serv_cap_1">13 Especialidades Técnicas</span>
+                    </div>
+                    <div class="services-hero-cap-pill">
+                        <i class="fas fa-stamp"></i> <span data-i18n="serv_cap_2">Alvará Nº 120974 – Classe 6</span>
+                    </div>
+                    <div class="services-hero-cap-pill">
+                        <i class="fas fa-truck-monster"></i> <span data-i18n="serv_cap_3">Equipamento Próprio</span>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- Technical Background Image Switcher Button -->
+        <button id="hero-bg-toggle" class="services-hero-bg-toggle" type="button" title="Alternar Imagem Técnica de Fundo">
+            <i class="fas fa-camera"></i> <span data-i18n="toggle_bg_text">Mudar Fundo Técnico</span>
+        </button>
     </section>
 
-    <section style="background: #f1f5f9; padding: 100px 0;">
+    <!-- Services Grid Section -->
+    <section style="background: var(--accent-light); padding: 100px 0;">
         <div class="container">
+            <div class="card-section-header reveal" style="text-align: center; max-width: 800px; margin: 0 auto 5rem;">
+                <span style="color: var(--primary); font-size: 0.85rem; font-weight: 800; letter-spacing: 0.25em; text-transform: uppercase; display: block; margin-bottom: 0.8rem;" data-i18n="serv_sec_tag">O Que Fazemos</span>
+                <h2 style="font-size: 3rem; margin-bottom: 1.2rem; color: var(--secondary);" data-i18n="serv_sec_title">Nossos Serviços Especializados</h2>
+                <p style="color: var(--text-muted); font-size: 1.15rem; line-height: 1.7;" data-i18n="serv_sec_desc">Cada serviço é executado com rigor militar, maquinaria avançada e profissionais qualificados para garantir durabilidade e precisão extrema.</p>
+            </div>
+
             <div class="service-grid">
-                <!-- 1 -->
-                <div class="service-card reveal" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                <!-- 1: Metal framing -->
+                <div class="service-card reveal" data-service="mf">
                     <div class="service-image-container">
-                        <img src="services-image/Metal framing and plasterboard systems.jpeg" alt="Metal Framing" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="services-image/Metal framing and plasterboard systems.jpeg" alt="Metal framing and plasterboard systems" loading="lazy">
+                        <div class="service-badge"><i class="fas fa-border-all"></i> <span data-i18n="s_tag_1">01. Estrutura</span></div>
+                        <div class="service-card-expand-icon"><i class="fas fa-expand-arrows-alt"></i></div>
                     </div>
-                    <div style="padding: 2rem;">
-                        <h3 data-i18n="serv_mf_t">Metal framing and plasterboard systems</h3>
-                        <p data-i18n="serv_mf_p">Precision installation of metal structures and plasterboard for modern interior partitions.</p>
+                    <div class="service-content">
+                        <div>
+                            <h3 data-i18n="serv_mf_t">Metal framing and plasterboard systems</h3>
+                            <p data-i18n="serv_mf_p">Precision installation of metal structures and plasterboard for modern interior partitions.</p>
+                        </div>
+                        <a href="contact.html?service=Metal+Framing" class="service-card-action">
+                            <span data-i18n="quote_btn">Pedir Orçamento</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
-                <!-- 2 -->
-                <div class="service-card reveal" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+
+                <!-- 2: Columns, beams, slabs -->
+                <div class="service-card reveal" data-service="c">
                     <div class="service-image-container">
-                        <img src="services-image/Columns, beams, and slabs.jpeg" alt="Concrete" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="services-image/Columns, beams, and slabs.jpeg" alt="Columns, beams, and slabs" loading="lazy">
+                        <div class="service-badge"><i class="fas fa-monument"></i> <span data-i18n="s_tag_2">02. Elementos</span></div>
+                        <div class="service-card-expand-icon"><i class="fas fa-expand-arrows-alt"></i></div>
                     </div>
-                    <div style="padding: 2rem;">
-                        <h3 data-i18n="serv_c_t">Columns, beams, and slabs</h3>
-                        <p data-i18n="serv_c_p">Structural concrete elements designed for maximum load-bearing capacity and durability.</p>
+                    <div class="service-content">
+                        <div>
+                            <h3 data-i18n="serv_c_t">Columns, beams, and slabs</h3>
+                            <p data-i18n="serv_c_p">Structural concrete elements designed for maximum load-bearing capacity and durability.</p>
+                        </div>
+                        <a href="contact.html?service=Concrete" class="service-card-action">
+                            <span data-i18n="quote_btn">Pedir Orçamento</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
-                <!-- 3 -->
-                <div class="service-card reveal" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+
+                <!-- 3: Masonry and brickwork -->
+                <div class="service-card reveal" data-service="m">
                     <div class="service-image-container">
-                        <img src="services-image/Masonry and brickwork.jpeg" alt="Masonry" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="services-image/Masonry and brickwork.jpeg" alt="Masonry and brickwork" loading="lazy">
+                        <div class="service-badge"><i class="fas fa-th-large"></i> <span data-i18n="s_tag_3">03. Alvenarias</span></div>
+                        <div class="service-card-expand-icon"><i class="fas fa-expand-arrows-alt"></i></div>
                     </div>
-                    <div style="padding: 2rem;">
-                        <h3 data-i18n="serv_m_t">Masonry and brickwork</h3>
-                        <p data-i18n="serv_m_p">High-quality brick and block work for robust and aesthetic wall solutions.</p>
+                    <div class="service-content">
+                        <div>
+                            <h3 data-i18n="serv_m_t">Masonry and brickwork</h3>
+                            <p data-i18n="serv_m_p">High-quality brick and block work for robust and aesthetic wall solutions.</p>
+                        </div>
+                        <a href="contact.html?service=Masonry" class="service-card-action">
+                            <span data-i18n="quote_btn">Pedir Orçamento</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
-                <!-- 4 -->
-                <div class="service-card reveal" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+
+                <!-- 4: Framework -->
+                <div class="service-card reveal" data-service="fr">
                     <div class="service-image-container">
-                        <img src="services-image/Framework.jpeg" alt="Framework" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="services-image/Framework.jpeg" alt="Framework" loading="lazy">
+                        <div class="service-badge"><i class="fas fa-ruler-combined"></i> <span data-i18n="s_tag_4">04. Cofragem</span></div>
+                        <div class="service-card-expand-icon"><i class="fas fa-expand-arrows-alt"></i></div>
                     </div>
-                    <div style="padding: 2rem;">
-                        <h3 data-i18n="serv_fr_t">Framework</h3>
-                        <p data-i18n="serv_fr_p">Expert formwork and framework execution for complex architectural designs.</p>
+                    <div class="service-content">
+                        <div>
+                            <h3 data-i18n="serv_fr_t">Framework</h3>
+                            <p data-i18n="serv_fr_p">Expert formwork and framework execution for complex architectural designs.</p>
+                        </div>
+                        <a href="contact.html?service=Framework" class="service-card-action">
+                            <span data-i18n="quote_btn">Pedir Orçamento</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
-                <!-- 5 -->
-                <div class="service-card reveal" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+
+                <!-- 5: Floor Screeding -->
+                <div class="service-card reveal" data-service="fs">
                     <div class="service-image-container">
-                        <img src="services-image/Floor Screeding.jpeg" alt="Floor Screeding" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="services-image/Floor Screeding.jpeg" alt="Floor Screeding" loading="lazy">
+                        <div class="service-badge"><i class="fas fa-layer-group"></i> <span data-i18n="s_tag_5">05. Pavimentos</span></div>
+                        <div class="service-card-expand-icon"><i class="fas fa-expand-arrows-alt"></i></div>
                     </div>
-                    <div style="padding: 2rem;">
-                        <h3 data-i18n="serv_fs_t">Floor Screeding</h3>
-                        <p data-i18n="serv_fs_p">Perfect floor leveling and preparation for all types of high-end finishes.</p>
+                    <div class="service-content">
+                        <div>
+                            <h3 data-i18n="serv_fs_t">Floor Screeding</h3>
+                            <p data-i18n="serv_fs_p">Perfect floor leveling and preparation for all types of high-end finishes.</p>
+                        </div>
+                        <a href="contact.html?service=Flooring" class="service-card-action">
+                            <span data-i18n="quote_btn">Pedir Orçamento</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
-                <!-- 6 -->
-                <div class="service-card reveal" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+
+                <!-- 6: Carpentry -->
+                <div class="service-card reveal" data-service="cr">
                     <div class="service-image-container">
-                        <img src="services-image/Carpentry.jpeg" alt="Carpentry" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="services-image/Carpentry.jpeg" alt="Carpentry" loading="lazy">
+                        <div class="service-badge"><i class="fas fa-hammer"></i> <span data-i18n="s_tag_6">06. Carpintaria</span></div>
+                        <div class="service-card-expand-icon"><i class="fas fa-expand-arrows-alt"></i></div>
                     </div>
-                    <div style="padding: 2rem;">
-                        <h3 data-i18n="serv_cr_t">Carpintaria</h3>
-                        <p data-i18n="serv_cr_p">Custom structural and decorative woodwork for premium residential projects.</p>
+                    <div class="service-content">
+                        <div>
+                            <h3 data-i18n="serv_cr_t">Carpintaria</h3>
+                            <p data-i18n="serv_cr_p">Custom structural and decorative woodwork for premium residential projects.</p>
+                        </div>
+                        <a href="contact.html?service=Carpentry" class="service-card-action">
+                            <span data-i18n="quote_btn">Pedir Orçamento</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
-                <!-- 7 -->
-                <div class="service-card reveal" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+
+                <!-- 7: Reinforced concrete structures -->
+                <div class="service-card reveal" data-service="rc">
                     <div class="service-image-container">
-                        <img src="services-image/Reinforced concrete structures.jpeg" alt="Reinforced Concrete" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="services-image/Reinforced concrete structures.jpeg" alt="Reinforced concrete structures" loading="lazy">
+                        <div class="service-badge"><i class="fas fa-shield-alt"></i> <span data-i18n="s_tag_7">07. Betão Armado</span></div>
+                        <div class="service-card-expand-icon"><i class="fas fa-expand-arrows-alt"></i></div>
                     </div>
-                    <div style="padding: 2rem;">
-                        <h3 data-i18n="serv_rc_t">Reinforced concrete structures</h3>
-                        <p data-i18n="serv_rc_p">Construction of durable and stable structures using high-grade reinforced concrete.</p>
+                    <div class="service-content">
+                        <div>
+                            <h3 data-i18n="serv_rc_t">Reinforced concrete structures</h3>
+                            <p data-i18n="serv_rc_p">Construction of durable and stable structures using high-grade reinforced concrete.</p>
+                        </div>
+                        <a href="contact.html?service=Reinforced+Concrete" class="service-card-action">
+                            <span data-i18n="quote_btn">Pedir Orçamento</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
-                <!-- 8 -->
-                <div class="service-card reveal" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+
+                <!-- 8: Plastering -->
+                <div class="service-card reveal" data-service="pr">
                     <div class="service-image-container">
-                        <img src="services-image/Plastering, rendering, and finishing works.jpeg" alt="Plastering" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="services-image/Plastering, rendering, and finishing works.jpeg" alt="Plastering, rendering, and finishing works" loading="lazy">
+                        <div class="service-badge"><i class="fas fa-paint-roller"></i> <span data-i18n="s_tag_8">08. Acabamentos</span></div>
+                        <div class="service-card-expand-icon"><i class="fas fa-expand-arrows-alt"></i></div>
                     </div>
-                    <div style="padding: 2rem;">
-                        <h3 data-i18n="serv_pr_t">Plastering, rendering, and finishing works</h3>
-                        <p data-i18n="serv_pr_p">Comprehensive surface finishing including advanced plastering and rendering techniques.</p>
+                    <div class="service-content">
+                        <div>
+                            <h3 data-i18n="serv_pr_t">Plastering, rendering, and finishing works</h3>
+                            <p data-i18n="serv_pr_p">Comprehensive surface finishing including advanced plastering and rendering techniques.</p>
+                        </div>
+                        <a href="contact.html?service=Plastering" class="service-card-action">
+                            <span data-i18n="quote_btn">Pedir Orçamento</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
-                <!-- 9 -->
-                <div class="service-card reveal" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+
+                <!-- 9: Ceramic tiling -->
+                <div class="service-card reveal" data-service="ct">
                     <div class="service-image-container">
-                        <img src="services-image/Ceramic tiling.jpeg" alt="Ceramic tiling" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="services-image/Ceramic tiling.jpeg" alt="Ceramic tiling" loading="lazy">
+                        <div class="service-badge"><i class="fas fa-th"></i> <span data-i18n="s_tag_9">09. Cerâmica</span></div>
+                        <div class="service-card-expand-icon"><i class="fas fa-expand-arrows-alt"></i></div>
                     </div>
-                    <div style="padding: 2rem;">
-                        <h3 data-i18n="serv_ct_t">Ceramic tiling</h3>
-                        <p data-i18n="serv_ct_p">Professional installation of high-quality ceramic and porcelain tiles for floors and walls.</p>
+                    <div class="service-content">
+                        <div>
+                            <h3 data-i18n="serv_ct_t">Ceramic tiling</h3>
+                            <p data-i18n="serv_ct_p">Professional installation of high-quality ceramic and porcelain tiles for floors and walls.</p>
+                        </div>
+                        <a href="contact.html?service=Ceramic" class="service-card-action">
+                            <span data-i18n="quote_btn">Pedir Orçamento</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
-                <!-- 10 -->
-                <div class="service-card reveal" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+
+                <!-- 10: Foundations and excavations -->
+                <div class="service-card reveal" data-service="f">
                     <div class="service-image-container">
-                        <img src="services-image/Foundations and excavations.jpeg" alt="Foundations" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="services-image/Foundations and excavations.jpeg" alt="Foundations and excavations" loading="lazy">
+                        <div class="service-badge"><i class="fas fa-mountain"></i> <span data-i18n="s_tag_10">10. Fundações</span></div>
+                        <div class="service-card-expand-icon"><i class="fas fa-expand-arrows-alt"></i></div>
                     </div>
-                    <div style="padding: 2rem;">
-                        <h3 data-i18n="serv_f_t">Foundations and excavations</h3>
-                        <p data-i18n="serv_f_p">Specialized ground preparation and excavation for solid building foundations.</p>
+                    <div class="service-content">
+                        <div>
+                            <h3 data-i18n="serv_f_t">Foundations and excavations</h3>
+                            <p data-i18n="serv_f_p">Specialized ground preparation and excavation for solid building foundations.</p>
+                        </div>
+                        <a href="contact.html?service=Foundations" class="service-card-action">
+                            <span data-i18n="quote_btn">Pedir Orçamento</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
-                <!-- 11 -->
-                <div class="service-card reveal" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+
+                <!-- 11: Steel Reinforcement -->
+                <div class="service-card reveal" data-service="sr">
                     <div class="service-image-container">
-                        <img src="services-image/Steel Reinforcement.jpeg" alt="Steel Reinforcement" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="services-image/Steel Reinforcement.jpeg" alt="Steel Reinforcement" loading="lazy">
+                        <div class="service-badge"><i class="fas fa-bars"></i> <span data-i18n="s_tag_11">11. Armaduras</span></div>
+                        <div class="service-card-expand-icon"><i class="fas fa-expand-arrows-alt"></i></div>
                     </div>
-                    <div style="padding: 2rem;">
-                        <h3 data-i18n="serv_sr_t">Steel Reinforcement</h3>
-                        <p data-i18n="serv_sr_p">Professional placement of steel bars to ensure maximum structural integrity.</p>
+                    <div class="service-content">
+                        <div>
+                            <h3 data-i18n="serv_sr_t">Steel Reinforcement</h3>
+                            <p data-i18n="serv_sr_p">Professional placement of steel bars to ensure maximum structural integrity.</p>
+                        </div>
+                        <a href="contact.html?service=Steel+Reinforcement" class="service-card-action">
+                            <span data-i18n="quote_btn">Pedir Orçamento</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
-                <!-- 12 -->
-                <div class="service-card reveal" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+
+                <!-- 12: Plumbing -->
+                <div class="service-card reveal" data-service="pl">
                     <div class="service-image-container">
-                        <img src="services-image/Plumbing.jpeg" alt="Plumbing" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="services-image/Plumbing.jpeg" alt="Plumbing" loading="lazy">
+                        <div class="service-badge"><i class="fas fa-faucet"></i> <span data-i18n="s_tag_12">12. Canalização</span></div>
+                        <div class="service-card-expand-icon"><i class="fas fa-expand-arrows-alt"></i></div>
                     </div>
-                    <div style="padding: 2rem;">
-                        <h3 data-i18n="serv_pl_t">Plumbing</h3>
-                        <p data-i18n="serv_pl_p">Complete plumbing solutions including water supply and drainage systems.</p>
+                    <div class="service-content">
+                        <div>
+                            <h3 data-i18n="serv_pl_t">Plumbing</h3>
+                            <p data-i18n="serv_pl_p">Complete plumbing solutions including water supply and drainage systems.</p>
+                        </div>
+                        <a href="contact.html?service=Plumbing" class="service-card-action">
+                            <span data-i18n="quote_btn">Pedir Orçamento</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
-                <!-- 13 -->
-                <div class="service-card reveal" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+
+                <!-- 13: Exterior Insulation System -->
+                <div class="service-card reveal" data-service="et">
                     <div class="service-image-container">
-                        <img src="services-image/Exterior Insulation System.jpeg" alt="Exterior Insulation" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="services-image/Exterior Insulation System.jpeg" alt="Exterior Insulation System" loading="lazy">
+                        <div class="service-badge"><i class="fas fa-shield-virus"></i> <span data-i18n="s_tag_13">13. Isolamento</span></div>
+                        <div class="service-card-expand-icon"><i class="fas fa-expand-arrows-alt"></i></div>
                     </div>
-                    <div style="padding: 2rem;">
-                        <h3 data-i18n="serv_et_t">Exterior Insulation System</h3>
-                        <p data-i18n="serv_et_p">Advanced ETICS systems for superior thermal efficiency and protection.</p>
+                    <div class="service-content">
+                        <div>
+                            <h3 data-i18n="serv_et_t">Exterior Insulation System</h3>
+                            <p data-i18n="serv_et_p">Advanced ETICS systems for superior thermal efficiency and building protection.</p>
+                        </div>
+                        <a href="contact.html?service=Exterior+Insulation" class="service-card-action">
+                            <span data-i18n="quote_btn">Pedir Orçamento</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Professional Section -->
-    <section style="background: var(--accent); padding: 100px 0;">
+    <!-- Professional Quality Section -->
+    <section style="background: var(--accent); padding: 120px 0;">
         <div class="container">
-            <div class="split-section">
+            <div class="split-section" style="align-items: center; gap: 6rem;">
                 <div class="split-image reveal">
-                    <img src="worker.jpeg" alt="Professional Worker">
-                    <div class="badge-float" data-i18n="worker_badge">+30 Trabalhadores Especializados</div>
+                    <img src="worker.jpeg" alt="EXO Building Professional Worker" style="border-radius: 24px; box-shadow: var(--shadow);">
+                    <div class="badge-float" style="background: var(--primary); color: white; padding: 1.5rem 2.2rem; border-radius: 16px; font-weight: 900; box-shadow: 0 15px 35px rgba(166, 83, 48, 0.35);">
+                        <span style="font-size: 2.2rem; display: block; line-height: 1; margin-bottom: 0.4rem; font-family: var(--font-h); font-weight: 800;">+30</span>
+                        <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700;" data-i18n="worker_badge">Trabalhadores Especializados</span>
+                    </div>
                 </div>
                 <div class="reveal">
-                    <h2 style="font-size: 3rem; margin-bottom: 2.5rem;" data-i18n="quality_title">Comprometidos com a Qualidade</h2>
-                    <p style="font-size: 1.25rem; color: var(--text-muted); margin-bottom: 3.5rem;" data-i18n="quality_p">
-                        Nossa equipe de 30 profissionais altamente qualificados trabalha com o que há de mais moderno em maquinário pesado para garantir que cada centímetro de sua obra seja perfeita.
+                    <span style="color: var(--primary); font-size: 0.85rem; font-weight: 800; letter-spacing: 0.25em; text-transform: uppercase; display: block; margin-bottom: 0.8rem;" data-i18n="qual_exec_badge">Garantia de Execução</span>
+                    <h2 style="font-size: 3.2rem; margin-bottom: 1.8rem; color: var(--secondary); line-height: 1.2;" data-i18n="quality_title">Comprometidos com a Qualidade</h2>
+                    <p style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 2.5rem; line-height: 1.7;" data-i18n="quality_p">
+                        Nossa equipa de 30 profissionais altamente qualificados trabalha com o que há de mais moderno em maquinaria pesada para garantir que cada centímetro da sua obra seja executado com perfeição estrutural e acabamento exemplar.
                     </p>
-                    <a href="contact.html" class="btn btn-primary" data-i18n="quality_btn">Fale com Especialista</a>
+                    
+                    <ul style="list-style: none; margin-bottom: 3rem; color: var(--secondary); font-weight: 700; font-size: 1rem; display: flex; flex-direction: column; gap: 1rem;">
+                        <li style="display: flex; align-items: center; gap: 1rem;"><i class="fas fa-check-circle" style="color: var(--primary); font-size: 1.2rem;"></i> <span data-i18n="qual_bullet_1">Cumprimento rigoroso de prazos e orçamentos</span></li>
+                        <li style="display: flex; align-items: center; gap: 1rem;"><i class="fas fa-check-circle" style="color: var(--primary); font-size: 1.2rem;"></i> <span data-i18n="qual_bullet_2">Supervisão técnica contínua e controlo de qualidade</span></li>
+                        <li style="display: flex; align-items: center; gap: 1rem;"><i class="fas fa-check-circle" style="color: var(--primary); font-size: 1.2rem;"></i> <span data-i18n="qual_bullet_3">Normas europeias de segurança e durabilidade</span></li>
+                    </ul>
+
+                    <div style="display: flex; gap: 1.2rem; flex-wrap: wrap;">
+                        <a href="contact.html" class="btn btn-primary" data-i18n="quality_btn"><i class="fas fa-headset" style="margin-right: 0.6rem;"></i> Fale com Especialista</a>
+                        <a href="https://wa.me/351918445810" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="border-color: var(--secondary); color: var(--secondary); display: inline-flex; align-items: center; gap: 0.6rem;"><i class="fab fa-whatsapp" style="color: #25D366; font-size: 1.2rem;"></i> WhatsApp</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -208,24 +375,12 @@
                     <img src="logo2.png" alt="EXO Building" class="footer-logo">
                     <p data-i18n="footer_brand">Construção de vanguarda e consultoria técnica em Portugal e no resto da Europa.</p>
                     <div class="social-icons">
-                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.instagram.com/exobuilding/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/351918445810" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://wa.me/351918445810" target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+351918445810" title="Telefone / Call" aria-label="Telefone"><i class="fas fa-phone-alt"></i></a>
+                        <a href="mailto:secretaria@exobuilding.pt" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 
-                <!-- Col 2: Navigation -->
-                <div class="footer-col">
-                    <h4 data-i18n="f_nav">Navegação</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
-                        <li><a href="projects.html" data-i18n="nav_projects">Projetos</a></li>
-                        <li><a href="services.html" data-i18n="nav_services">Serviços</a></li>
-                        <li><a href="about.html" data-i18n="nav_about">Sobre Nós</a></li>
-                        <li><a href="contact.html" data-i18n="nav_contact">Contacto</a></li>
-                    </ul>
-                </div>
-
                 <!-- Col 2: Navigation -->
                 <div class="footer-col">
                     <h4 data-i18n="f_nav">Navegação</h4>
@@ -272,10 +427,48 @@
         </div>
     </footer>
 
+    <!-- Service Detail Modal (Enlarged Card & Full Description) -->
+    <div id="service-modal" class="service-modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="service-modal-dialog">
+            <button class="service-modal-close" id="service-modal-close" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="service-modal-image-col">
+                <img id="service-modal-img" src="" alt="Service Photo">
+            </div>
+            <div class="service-modal-content-col">
+                <div>
+                    <div class="service-modal-badge" id="service-modal-badge">
+                        <i class="fas fa-tools"></i> <span>01. Estrutura</span>
+                    </div>
+                    <h2 class="service-modal-title" id="service-modal-title">Service Title</h2>
+                    <p class="service-modal-desc" id="service-modal-desc">Service Description</p>
+                    <div class="service-modal-features-title" data-i18n="serv_spec_title">Especificações & Garantia Técnica</div>
+                    <ul class="service-modal-features" id="service-modal-features">
+                        <!-- Dynamic list items -->
+                    </ul>
+                </div>
+                <div class="service-modal-actions">
+                    <a href="contact.html" class="service-modal-btn-primary" id="service-modal-quote-btn">
+                        <i class="fas fa-paper-plane"></i> <span data-i18n="quote_btn">Pedir Orçamento</span>
+                    </a>
+                    <a href="https://wa.me/351918445810" target="_blank" rel="noopener noreferrer" class="service-modal-btn-wa">
+                        <i class="fab fa-whatsapp"></i> <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="lightbox" id="lightbox">
         <span class="lightbox-close" id="lightbox-close">&times;</span>
         <img src="" alt="" class="lightbox-content" id="lightbox-img">
     </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/351918445810" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" title="WhatsApp Chat" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <script src="script.js"></script>
 </body>
